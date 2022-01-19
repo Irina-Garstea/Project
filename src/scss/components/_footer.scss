@@ -1,0 +1,30 @@
+.main-footer {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 105px 120px 105px;
+
+    a {
+        color: $colorWhite;
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: 1px;
+    } 
+    .contact_Us {
+        text-transform: uppercase;
+        padding-left: 70px;
+    }
+    .insomniac {
+        padding-left: 10px;
+    }
+    h3 {
+        margin-left: 70px;
+    }
+    p {
+        padding: 70px;
+        text-align: justify;
+    }
+   
+   }
