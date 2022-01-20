@@ -1,0 +1,35 @@
+
+.container {
+    display: grid;
+    grid-gap: 70px;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+.hero-hero {
+    margin-left: 105px;
+}
+.title-hero {
+    margin-top: 120px;
+    font-weight: bold;
+}
+
+#subtitle-hero {
+    font-size: 24px;
+    color: $colorPink;
+    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: 1px;
+    padding-top: 101px;
+}
+
+.paragraph-hero {
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 40px;
+} 
+img {
+    width: 574px;
+    height: 574px;
+    margin-top: 95px;
+}

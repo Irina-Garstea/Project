@@ -2,6 +2,7 @@
     background-color: $colorDarkBlue;
     color: $colorWhite;
     display: grid;
+    grid-gap: 70px;
     align-content: center;
     grid-template-columns: 1fr 1fr;
     padding: 120px 105px 120px 105px;
@@ -15,25 +16,26 @@
     .contact_Us {
         text-transform: uppercase;
         font-weight: 400;
-        padding-left: 70px;
-    }
-    .insomniac {
       
-        padding-left: 10px;
-     
+    }
+    .insomniac { 
+        padding-top: 230px;
     }
     h3 {
         font-weight: normal;
         font-size: 24px;
         line-height: 42px;
-        margin-left: 70px;
+        // margin-left: 70px;
     }
     p {
         font-size: 18px;
         line-height: 27px;
         letter-spacing: 1px;
-        padding: 70px;
+    
       
     }
-   
+    .about-footer {
+        display: grid;
+        grid-template-rows: max-content 1fr max-content;
+    }
    }
