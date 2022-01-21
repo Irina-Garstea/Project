@@ -2,33 +2,34 @@
   display: grid;
   align-content: center;
   grid-template-columns: 1fr 1fr;
-  margin-left: 105px;
-  margin-right: 105px;
-}
-.hero-hero {
-  margin-top: 120px;
-  h4 {
-    font-size: 24px;
-    color: $colorPink;
-    text-transform: uppercase;
-    line-height: 28px;
-    letter-spacing: 1px;
-    padding-top: 101px;
 
-    p {
+  .hero-hero {
+    margin-top: 120px;
+    margin-left: 100px;
+
+    h1 {
+      font-weight: bold;
+    }
+    h4 {
       font-size: 24px;
+      color: $colorPink;
+      text-transform: uppercase;
       line-height: 28px;
+      letter-spacing: 1px;
+      padding-top: 101px;
+      p {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
   }
-}
-
-.paragraph-hero {
-  font-size: 24px;
-  line-height: 28px;
-  padding-top: 40px;
-}
-img {
-  width: 574px;
-  height: 574px;
-  margin-top: 95px;
+  .img-hero {
+    img {
+      width: 574px;
+      height: 574px;
+      margin-left: 120px;
+      margin-top: 162px;
+      margin-right: 180px;
+    }
+  }
 }

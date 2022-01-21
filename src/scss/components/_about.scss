@@ -1,6 +1,5 @@
 .about {
-  background-color: #f0f0f0;
-  width: 100%;
+  background-color: $colorGrey;
   height: 560px;
   margin-top: 120px;
   margin-bottom: 199px;
@@ -10,33 +9,41 @@
     color: $colorWhite;
     width: 445px;
     height: 560px;
-    margin-left: 154px;
-    padding-left: 95px;
-    padding-right: 95px;
+    letter-spacing: 1px;
+    margin-left: 174px;
+
     h6 {
       text-transform: uppercase;
+      font-weight: 100;
       padding-top: 120px;
+      padding-left: 95px;
     }
     h3 {
+      font-weight: 100;
       padding-top: 60px;
+      padding-left: 95px;
+      padding-right: 46px;
     }
   }
   .about-content {
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
-
-    .boxed {
-      background-color: $colorTurquoise;
-      color: $colorWhite;
-      padding: 34px 114px 73px 115px;
+    .text-content {
+      display: grid;
+      grid-template-rows: 280px;
+      img {
+        margin-top: 0;
+        padding-right: 180px;
+      }
+      .boxed {
+        background-color: $colorTurquoise;
+        color: $colorWhite;
+        width: 769px;
+        p {
+          text-align: left;
+          padding: 34px 114px 73px 115px;
+        }
+      }
     }
-
-    img {
-      margin-top: 0;
-    }
-  }
-  .text-content {
-    display: grid;
-    grid-template-rows: 280px;
   }
 }
