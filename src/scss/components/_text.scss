@@ -1,0 +1,23 @@
+.text-section {
+  margin-top: 250px;
+  .content-text {
+    button {
+      background-color: orange;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: $colorWhite;
+      text-align: center;
+      font-weight: bold;
+      border: orange;
+      margin-left: 410px;
+    }
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 120px;
+    margin-top: -60px;
+    padding-left: 500px;
+    padding-right: 410px;
+  }
+}
