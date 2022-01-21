@@ -4,39 +4,39 @@
   height: 560px;
   margin-top: 120px;
   margin-bottom: 199px;
-}
-h6 {
-  text-transform: uppercase;
-  padding-top: 120px;
-}
-.IDS-title {
-  padding-bottom: 233px;
-  margin-top: 60px;
-}
-.about-IDS {
-  background-color: $colorDarkBlue;
-  color: $colorWhite;
-  width: 445px;
-  height: 560px;
-  margin-left: 154px;
-  padding-left: 95px;
-  padding-right: 95px;
-}
-.img-about {
-  position: absolute;
-  width: 769px;
-  height: 576px;
-  margin-left: 597px;
-  margin-right: 181px;
-  margin-top: -96px;
-}
 
-.boxed {
-  position: absolute;
-  border: 1px solid $colorTurquoise;
-  background-color: $colorTurquoise;
-  color: $colorWhite;
-  margin-top: -298px;
-  margin-right: 192px;
-  padding: 34px 114px 73px 115px;
+  .about-IDS {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    width: 445px;
+    height: 560px;
+    margin-left: 154px;
+    padding-left: 95px;
+    padding-right: 95px;
+    h6 {
+      text-transform: uppercase;
+      padding-top: 120px;
+    }
+    h3 {
+      padding-top: 60px;
+    }
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+
+    .boxed {
+      background-color: $colorTurquoise;
+      color: $colorWhite;
+      padding: 34px 114px 73px 115px;
+    }
+
+    img {
+      margin-top: 0;
+    }
+  }
+  .text-content {
+    display: grid;
+    grid-template-rows: 280px;
+  }
 }
