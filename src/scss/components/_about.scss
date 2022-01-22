@@ -3,6 +3,50 @@
   height: 560px;
   margin-top: 120px;
   margin-bottom: 199px;
+  .content-about {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    margin-right: 180px;
+  }
+  .about-IDS {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    font-weight: 400;
+    width: 445px;
+    height: 560px;
+    letter-spacing: 1px;
+    margin-left: 294px;
+
+    h6 {
+      text-transform: uppercase;
+      padding-top: 120px;
+      padding-left: 95px;
+    }
+    h3 {
+      padding-top: 60px;
+      padding-left: 95px;
+      padding-right: 46px;
+    }
+  }
+}
+.boxed-about {
+  display: grid;
+  grid-template-rows: 280px;
+
+  .boxed {
+    p {
+      background-color: $colorTurquoise;
+      color: $colorWhite;
+      padding: 34px 114px 73px 115px;
+    }
+  }
+}
+
+/* .about {
+  background-color: $colorGrey;
+  height: 560px;
+  margin-top: 120px;
+  margin-bottom: 199px;
 
   .about-IDS {
     background-color: $colorDarkBlue;
@@ -27,7 +71,8 @@
   }
   .about-content {
     display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-columns: repeat(2, 0.2fr);
+    gap: 0;
     .text-content {
       display: grid;
       grid-template-rows: 280px;
@@ -47,3 +92,5 @@
     }
   }
 }
+
+*/

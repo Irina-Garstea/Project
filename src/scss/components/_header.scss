@@ -1,38 +1,36 @@
 .header-main {
   .logo {
+    img {
+      width: 105px;
+      height: 68px;
+      margin-top: 20px;
+      margin-left: 47px;
+    }
+  }
+  .header-nav {
     display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-auto-rows: auto;
     align-items: center;
-    grid-template-columns: max-content 1fr max-content;
-    padding: 10px 35px 10px 35px;
+    margin-top: 43px;
+    a {
+      color: $colorBlack;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .active {
+      color: $colorPink;
+    }
     .download-pdf {
       text-transform: uppercase;
       background-color: $colorPink;
       color: $colorWhite;
       text-decoration: none;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 60px;
+      margin-left: 70px;
       padding: 10px;
-    }
-    img {
-      width: 105px;
-      height: 68px;
-      margin-top: 20px;
-    }
-    .header-nav {
-      display: flex;
-      justify-content: center;
-      font-size: 16px;
-      line-height: 24px;
-      gap: 120px;
-      a {
-        color: $colorBlack;
-        text-transform: uppercase;
-        line-height: 24px;
-        font-size: 16px;
-        letter-spacing: 1px;
-        text-decoration: none;
-      }
-      .active {
-        color: $colorPink;
-      }
     }
   }
 }
