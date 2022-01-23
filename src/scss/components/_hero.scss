@@ -1,26 +1,37 @@
-.content-hero {
-  display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
-  margin-left: 105px;
-  margin-top: 120px;
-  .hero-hero {
-    margin-right: 120px;
-    h1 {
-      font-weight: 400;
+.hero {
+  width: 1680px;
+  .content-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    margin-left: 105px;
+    margin-top: 120px;
+    .hero-hero {
+      margin-top: 120px;
+      margin-left: 105px;
+
+      h1 {
+        font-weight: 400;
+        width: 570px;
+        height: 231px;
+      }
+      h4 {
+        color: $colorPink;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 101px;
+      }
+      p {
+        width: 445px;
+        height: 56px;
+      }
     }
-    h4 {
-      color: $colorPink;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding-top: 101px;
-    }
-  }
-  .img-hero {
-    img {
-      width: 574px;
-      height: 574px;
-      padding-left: 120px;
-      padding-bottom: 120px;
+    .img-hero {
+      img {
+        width: 574px;
+        height: 574px;
+        margin-left: 120px;
+        margin-right: 180px;
+      }
     }
   }
 }

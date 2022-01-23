@@ -1,6 +1,7 @@
 .vision-section {
   background-color: $colorBlue;
   color: $colorWhite;
+  width: 1680px;
   .vision-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,10 +70,122 @@
     transform: translatex(-50%);
     border: 2px solid $colorWhite;
   }
-
   .active::after,
   .link:hover::after {
     background: $colorPink;
     border: 2px solid $colorPink;
   }
 }
+.stageVision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 105px;
+  margin-top: 100px;
+
+  .img-stage {
+    #stage-img {
+      width: 90px;
+      border-radius: 50%;
+    }
+  }
+  .text-stage {
+    h3 {
+      font-style: italic;
+      padding-top: 36px;
+    }
+    h4 {
+      font-style: italic;
+      padding-top: 16px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      width: 440px;
+      height: 81px;
+    }
+  }
+
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  .read {
+    margin-top: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .img-stars {
+    z-index: 1;
+    img {
+      width: 615px;
+      height: 615px;
+      border-bottom: 7px solid $colorPink;
+    }
+  }
+  .imgAstronaut {
+    position: absolute;
+    left: 809px;
+    z-index: 3;
+    right: 179px;
+    padding-top: 61px;
+    padding-bottom: 74px;
+
+    .ovals {
+      position: absolute;
+      z-index: 2;
+      margin-left: 20px;
+      margin-top: 3px;
+    }
+    #rectangle {
+      position: absolute;
+      z-index: 1;
+      margin-bottom: -8px;
+      height: 23px;
+    }
+    .astronauts {
+      img {
+        width: 791px;
+        height: 489px;
+      }
+    }
+  }
+}
+
+/*
+.stageVision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .stage {
+    margin-left: 105px;
+    #stage-img {
+      border-radius: 50%;
+    }
+    h3,
+    h4 {
+      font-style: italic;
+    }
+  }
+  .imagesVision {
+    display: grid;
+    grid-template-rows: 30px;
+    .imgStars {
+      img {
+        border-bottom: 10px solid $colorPink;
+        margin-left: 835px;
+        margin-right: 229px;
+        margin-bottom: 242px;
+      }
+    }
+    .imgAstronaut {
+      padding-right: 179px;
+      padding-left: 809px;
+      margin-bottom: 74px;
+      margin-top: 64px;
+      #rectangle {
+        margin-bottom: -7px;
+      }
+    }
+  }
+}
+*/

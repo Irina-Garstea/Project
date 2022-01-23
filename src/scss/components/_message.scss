@@ -1,8 +1,9 @@
 .message {
   margin-top: 119px;
+
   .message-content {
     display: grid;
-    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-columns: repeat(4, 0fr);
     .rectangle {
       background-color: $colorTurquoise;
       width: 285px;
@@ -29,6 +30,8 @@
     }
   }
   .img-message {
+    width: 444px;
+    height: 624px;
     .rectangleGreen {
       background-color: $colorGreen;
       color: $colorWhite;
