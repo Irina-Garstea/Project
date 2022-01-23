@@ -1,0 +1,28 @@
+.podcast-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .podcast-text {
+    p {
+      font-size: 22px;
+      line-height: 33px;
+      margin-left: 105px;
+      margin-top: 80px;
+      width: 640px;
+      height: 66;
+      margin-bottom: 80px;
+    }
+  }
+  .button-podcast {
+    button {
+      background-color: $colorPink;
+      color: $colorWhite;
+      text-transform: uppercase;
+      border: 1px solid $colorPink;
+      margin-top: 80px;
+      margin-left: 281px;
+      margin-right: 113px;
+      margin-bottom: 80px;
+      padding: 10px;
+    }
+  }
+}

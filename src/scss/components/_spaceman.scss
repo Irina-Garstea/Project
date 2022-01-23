@@ -1,0 +1,30 @@
+.ids-section {
+  .ids-block {
+    background-color: $colorRed;
+    position: absolute;
+    width: 740px;
+    height: 496px;
+    color: $colorWhite;
+    margin-left: 180px;
+    margin-top: 280px;
+    margin-bottom: 40px;
+    padding: 100px;
+  }
+  .tra {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    .ids-content {
+      background-color: $colorGrey;
+      width: 655px;
+      height: 576px;
+      margin-top: 230px;
+    }
+    .img-spaceman {
+      img {
+        width: 895px;
+        height: 759px;
+        margin-top: 120px;
+      }
+    }
+  }
+}
