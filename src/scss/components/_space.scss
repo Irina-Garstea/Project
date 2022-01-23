@@ -1,0 +1,29 @@
+.section-space {
+  .content-space {
+    background-color: $colorGrey;
+    width: 1155px;
+    height: 680px;
+    margin-top: 120px;
+    margin-left: 0;
+    padding-left: 285px;
+    padding-top: 251px;
+    padding-right: 430px;
+    padding-bottom: 235px;
+  }
+  p {
+    width: 440px;
+    height: 194px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .view {
+    padding-top: 40px;
+    text-transform: uppercase;
+    a {
+      color: $colorBlue;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
