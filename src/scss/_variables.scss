@@ -5,14 +5,17 @@ $colorWhite: #fff;
 $colorDarkBlue: #003c82;
 $colorTurquoise: #1996c3;
 $colorGreen: #8dc63f;
-$colorGrey: #eff9fd;
 $colorRed: #d84e30;
 $colorBlue: #266299;
+$colorGrey: #eff9fd;
+$colorGray-100: #f0f0f0;
+
+$colorBlue-100: #023d74;
 
 /* Typography */
-$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-ideal-sans: "Ideal Sans", $font-family-base;
-$font-mercury: "Mercury Text G2", $font-family-base;
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-ideal-sans: 'Ideal Sans', $font-family-base;
+$font-mercury: 'Mercury Text G2', $font-family-base;
 
 $font-size-base: 18px;
 $font-size-base-mobile: 16px;
@@ -25,3 +28,8 @@ $font-weight-bold: 700;
 
 $line-height-base: 27px;
 $line-height-base-mobile: 24px;
+
+/* Z-index */
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-backdrop: 1040;
