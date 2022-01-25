@@ -7,20 +7,14 @@ $colorTurquoise: #1996c3;
 $colorGreen: #8dc63f;
 $colorRed: #d84e30;
 $colorBlue: #266299;
-<<<<<<< HEAD
 $colorGray: #eff9fd;
 $colorGray-100: #f0f0f0;
-=======
-$colorGrey: #eff9fd;
-$colorGray-100: #f0f0f0;
-
->>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940
 $colorBlue-100: #023d74;
 
 /* Typography */
-$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-ideal-sans: 'Ideal Sans', $font-family-base;
-$font-mercury: 'Mercury Text G2', $font-family-base;
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-ideal-sans: "Ideal Sans", $font-family-base;
+$font-mercury: "Mercury Text G2", $font-family-base;
 
 $font-size-base: 18px;
 $font-size-base-mobile: 16px;
@@ -34,15 +28,12 @@ $font-weight-bold: 700;
 $line-height-base: 27px;
 $line-height-base-mobile: 24px;
 
-<<<<<<< HEAD
 /* Container */
 $container-max-width: 1238px;
 $container-gap: 12px;
 $container-gap-tablet: 36px;
 $container-small-max-width: 1004px;
 
-=======
->>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940
 /* Z-index */
 $zindex-sticky: 1020;
 $zindex-fixed: 1030;
