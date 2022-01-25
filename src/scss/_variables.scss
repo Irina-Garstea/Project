@@ -5,9 +5,11 @@ $colorWhite: #fff;
 $colorDarkBlue: #003c82;
 $colorTurquoise: #1996c3;
 $colorGreen: #8dc63f;
-$colorGrey: #eff9fd;
 $colorRed: #d84e30;
 $colorBlue: #266299;
+$colorGray: #eff9fd;
+$colorGray-100: #f0f0f0;
+$colorBlue-100: #023d74;
 
 /* Typography */
 $font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,3 +27,14 @@ $font-weight-bold: 700;
 
 $line-height-base: 27px;
 $line-height-base-mobile: 24px;
+
+/* Container */
+$container-max-width: 1238px;
+$container-gap: 12px;
+$container-gap-tablet: 36px;
+$container-small-max-width: 1004px;
+
+/* Z-index */
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-backdrop: 1040;

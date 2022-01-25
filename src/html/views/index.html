@@ -21,42 +21,45 @@
   </head>
   <body>
     <header class="header-main">
-      <section class="section-header">
+      <div class="header-container">
+        <a href="/" class="header-logo">
+          <img src="img/logo.jpg" alt="IDS logo" />
+        </a>
+        <!-- .header-log -->
         <nav class="header-nav">
-          <div class="logo">
-            <a href="index.html"><img src="img/logo.jpg" alt="no-photo" /></a>
-          </div>
-          <div class="nav-about">
-            <h6><a class="active" href="index.html">About us</a></h6>
-          </div>
-          <div class="nav-management">
-            <h6><a href="">Knowledge Management Journey</a></h6>
-          </div>
-          <div class="nav-solution">
-            <h6><a href="#solution">Knowledge Solutions</a></h6>
-          </div>
-          <div class="pdf">
-            <h6><a class="download-pdf" href="">Download PDF</a></h6>
-          </div>
+          <a class="active" href="#">About us</a>
+          <a href="#">Knowledge Management Journey</a>
+          <a href="#">Knowledge Solutions</a>          
         </nav>
-      </section>
+        <!-- .header-nav -->
+        <a class="btn primary" href="" title="Download pdf.pdf file" target="_blank" rel="noopener noreferrer" aria-labelledby="Download pdf.pdf file" download="pdf.pdf">Download PDF</a>
+      </div>
+      <!-- .header-container -->
     </header>
     <!-- .main-header -->
+
+
+
     <main class="main-wrapper">
-      <section class="hero">
-          <div class="content-hero">
-            <div class="hero-hero">
+      <section class="section-hero">
+          <div class="container section-hero-container">
+            <div class="hero-content">
               <h1>Welcome to the insert some lorem copy here</h1>
               <h4>Vision, Learning, Collaboration.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
             <div class="img-hero">
-              <img src="img/hero.jpg" alt="photo-hero" />
+              <img src="img/hero.jpg" alt="hero-image" />
             </div>
           </div>
-        </div>
+            <!-- .container-->
       </section>
-      <!--.Hero -->
+      <!--.section-hero -->
+
+
+
       <section class="about">
         <div class="about-about">
           <div class="content-about">
@@ -138,7 +141,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section> 
 
       <!--.Text -->
 
@@ -213,6 +216,12 @@
             <img src="img/astronaut.jpg" alt="no-photo" />
         </div> 
       </section> 
+
+
+
+
+
+
       <!--.Vision-->
       <section class="section-space">
         <div class="content-space">
@@ -238,13 +247,18 @@
       <!--.SpaceMan-->
       <section class="podcast-section">
         <div class="podcast-text">
-          <p>To learn even more about IDS’s knowledge solutions, check out IDS &apos;s TED-x style talks and podcasts.</p>
+          <p>To learn even more about IDS&apos;s knowledge solutions, check out IDS &apos;s TED-x style talks and podcasts.</p>
         </div>
         <div class="button-podcast">
-        <button class="podcast-button">View Podcast</button>
+        <button class="btn primary">View Podcast</button>
         </div>
       </section>
+      <!-- .Podcast-->
     </main>
+
+
+
+    
     <!-- .main-wrapper -->
     <footer class="main-footer">
       <div class="about-footer">
