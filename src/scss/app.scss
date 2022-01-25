@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Mixins */
 @import "~normalize.css";
 @import "fonts";
@@ -21,3 +22,26 @@
 @import "components/space";
 @import "components/spaceman";
 @import "components/podcast";
+=======
+@import '~normalize.css';
+@import 'fonts';
+@import 'variables';
+@import 'helpers';
+@import 'typography';
+@import 'mixins/fluid-values';
+@import 'mixins/line-clamp';
+
+/* Components */
+@import 'components/button';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/message';
+@import 'components/text';
+@import 'components/vision';
+@import 'components/space';
+@import 'components/spaceman';
+@import 'components/podcast';
+>>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940

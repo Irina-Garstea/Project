@@ -13,7 +13,10 @@
   grid-template-columns: auto 1fr auto;
   align-items: center;
   max-width: 1680px;
+<<<<<<< HEAD
   padding: 43px 60px 21px 47px;
+=======
+>>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940
   margin: 0 auto;
 }
 
@@ -40,7 +43,10 @@
   @include fluidValue(column-gap, 120, 56, 1680, 1200);
 
   a {
+<<<<<<< HEAD
     font-family: $font-ideal-sans;
+=======
+>>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940
     font-size: $font-size-base-mobile;
     font-weight: $font-weight-medium;
     text-transform: uppercase;
@@ -50,6 +56,7 @@
 
     &.active {
       color: $colorPink;
+<<<<<<< HEAD
       font-family: $font-family-base;
     }
   }
@@ -89,6 +96,8 @@
       margin-right: 60px;
       margin-left: 70px;
       padding: 10px;
+=======
+>>>>>>> 474096b4684fff6270bd1794dc2a2bb3bd76e940
     }
   }
 }
