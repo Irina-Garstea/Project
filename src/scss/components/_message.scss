@@ -1,45 +1,66 @@
-.message {
-  margin-top: 119px;
-
-  .message-content {
+.section-message {
+  margin-bottom: 100px;
+  position: relative;
+  .container {
     display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    .rectangle {
-      background-color: $colorTurquoise;
-      width: 285px;
-      height: 516px;
-    }
-    .rectangleSecond {
-      background-color: $colorGray;
-      width: 769px;
-      height: 659px;
-      margin-top: 227px;
-      padding-top: 120px;
-      padding-right: 114px;
-      padding-left: 115px;
-
-      #ids-message {
-        color: $colorPink;
-      }
-    }
-    .rectangleThird {
-      background-color: $colorRed;
-      width: 181px;
-      height: 423px;
-      margin-top: 466px;
-    }
+    grid-template-columns: max-content 1fr;
   }
-  .img-message {
-    width: 444px;
-    height: 624px;
-    .rectangleGreen {
-      background-color: $colorGreen;
-      color: $colorWhite;
-      width: 445px;
-      height: 263px;
-      margin-top: -8px;
-      padding-top: 41px;
-      padding-left: 65px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% - 607px);
+    height: calc(100% - 272px);
+    background-color: $colorTurquoise;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(50% - 607px);
+    height: calc(423px);
+    background-color: $colorRed;
+    z-index: -1;
+  }
+}
+.message-contact-info {
+  max-width: 445px;
+  background-color: $colorGreen;
+  color: $colorWhite;
+  padding: 40px 65px 60px 65px;
+  position: absolute;
+  bottom: 0;
+  a {
+    color: $colorWhite;
+  }
+}
+.message-image {
+  img {
+    display: block;
+  }
+}
+.message-contact {
+  position: relative;
+  min-height: 777px;
+}
+.message-description {
+  position: relative;
+  .description-text {
+    position: absolute;
+    background-color: $colorGray;
+    padding: 120px 115px 93px 115px;
+    max-height: 700px;
+    bottom: 0;
+
+    h5 {
+      color: $colorPink;
+      padding-top: 20px;
+      font-weight: normal;
+      padding-bottom: 30px;
     }
   }
 }
