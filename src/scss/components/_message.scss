@@ -5,26 +5,95 @@
     display: grid;
     grid-template-columns: max-content 1fr;
   }
-  position: relative;
-  &::before {
+
+  &::before,
+  &:after {
     content: "";
     position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
     top: 0;
     left: 0;
     width: calc(50% - 607px);
     height: calc(100% - 272px);
     background-color: $colorTurquoise;
-    z-index: -1;
   }
   &::after {
-    content: "";
-    position: absolute;
     bottom: 0;
     right: 0;
     width: calc(50% - 607px);
     height: calc(423px);
     background-color: $colorRed;
+  }
+}
+.message-contact-info {
+  max-width: 445px;
+  padding: 40px 65px 60px 65px;
+  position: absolute;
+
+  a {
+    color: $colorWhite;
+  }
+}
+.message-image {
+  img {
+    display: block;
+  }
+}
+.message-contact {
+  position: relative;
+  min-height: 777px;
+  background-color: $colorGreen;
+  color: $colorWhite;
+}
+.message-description {
+  position: relative;
+  .description-text {
+    position: absolute;
+    background-color: $colorGray;
+    padding: 120px 115px 93px 115px;
+
+    #description {
+      color: $colorPink;
+      font-size: 22px;
+      line-height: 33px;
+      padding-top: 20px;
+      font-weight: normal;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+/*.section-message {
+  margin-bottom: 100px;
+  position: relative;
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+
+  &::before,
+  &:after {
+    content: "";
+    position: absolute;
     z-index: -1;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: calc(50% - 607px);
+    height: calc(100% - 272px);
+    background-color: $colorTurquoise;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+    width: calc(50% - 607px);
+    height: calc(423px);
+    background-color: $colorRed;
   }
 }
 .message-contact-info {
@@ -53,8 +122,6 @@
     position: absolute;
     background-color: $colorGray;
     padding: 120px 115px 93px 115px;
-    max-height: 700px;
-    bottom: 0;
 
     h5 {
       color: $colorPink;
@@ -64,3 +131,5 @@
     }
   }
 }
+
+*/
