@@ -1,74 +1,7 @@
-.section-message {
-  margin-bottom: 100px;
-  position: relative;
-  .container {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-  }
-
-  &::before,
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-  }
-
-  &::before {
-    top: 0;
-    left: 0;
-    width: calc(50% - 607px);
-    height: calc(100% - 272px);
-    background-color: $colorTurquoise;
-  }
-  &::after {
-    bottom: 0;
-    right: 0;
-    width: calc(50% - 607px);
-    height: calc(423px);
-    background-color: $colorRed;
-  }
-}
-.message-contact-info {
-  max-width: 445px;
-  padding: 40px 65px 60px 65px;
-  position: absolute;
-
-  a {
-    color: $colorWhite;
-  }
-}
-.message-image {
-  img {
-    display: block;
-  }
-}
-.message-contact {
-  position: relative;
-  min-height: 777px;
-  background-color: $colorGreen;
-  color: $colorWhite;
-}
-.message-description {
-  position: relative;
-  .description-text {
-    position: absolute;
-    background-color: $colorGray;
-    padding: 120px 115px 93px 115px;
-
-    #description {
-      color: $colorPink;
-      font-size: 22px;
-      line-height: 33px;
-      padding-top: 20px;
-      font-weight: normal;
-      padding-bottom: 30px;
-    }
-  }
-}
-
 /*.section-message {
   margin-bottom: 100px;
   position: relative;
+  display: grid;
   .container {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -123,7 +56,7 @@
     background-color: $colorGray;
     padding: 120px 115px 93px 115px;
 
-    h5 {
+    #description {
       color: $colorPink;
       padding-top: 20px;
       font-weight: normal;
@@ -133,3 +66,81 @@
 }
 
 */
+
+.section-message {
+  margin-bottom: 100px;
+  position: relative;
+
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(50% - 607px);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    height: calc(100% - 254px);
+    background-color: $colorTurquoise;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    height: calc(100% - 355px);
+    background-color: $colorRed;
+  }
+}
+
+.message-contact-info {
+  background-color: $colorGreen;
+  color: $colorWhite;
+  padding: 40px 55px 60px 65px;
+  align-self: start;
+  position: relative;
+
+  p {
+    padding-top: 18px;
+    max-width: 315px;
+  }
+
+  a {
+    color: $colorWhite;
+  }
+}
+
+.message-image {
+  height: 515px;
+
+  img {
+    object-position: top;
+    object-fit: cover;
+  }
+}
+
+.message-contact {
+  background-color: $colorGreen;
+  display: grid;
+}
+
+.message-description {
+  margin-top: 120px;
+  padding: 120px 115px 93px 115px;
+  background-color: $colorGray;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  #description {
+    margin-bottom: 30px;
+    color: $colorPink;
+  }
+}
