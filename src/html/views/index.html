@@ -29,306 +29,79 @@
         <nav class="header-nav">
           <a class="active" href="#">About us</a>
           <a href="#">Knowledge Management Journey</a>
-          <a href="#">Knowledge Solutions</a>          
+          <a href="#">Knowledge Solutions</a>
         </nav>
         <!-- .header-nav -->
 
-        <a class="btn primary" 
-        href="pdf/document.pdf" 
-        title="Download pdf.pdf file" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        aria-labelledby="Download pdf.pdf file" 
-        download="pdf.pdf">
-        Download PDF</a>
+        <a
+          class="btn primary"
+          href="pdf/document.pdf"
+          title="Download pdf.pdf file"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-labelledby="Download pdf.pdf file"
+          download="pdf.pdf"
+        >
+          Download PDF</a
+        >
       </div>
-    <div class="menuMobile">
-      <svg>
-        <defs>
-          <filter id="gooeyness">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
-            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-          </filter>
-        </defs>
-      </svg>
-            <div class="plate plate1" onclick="this.classList.toggle('active')">
-              <svg class="burgger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                <path class="line line1" d="M 30,65 H 70"/>
-                <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"/>
-                <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"/>
-              </svg>
-              <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                <path class="line" d="M 34,32 L 66,68" />
-                <path class="line" d="M 66,32 L 34,68" />
-              </svg>
-    </div>
-      <!-- .header-container -->
-      </div>
+      <!-- .button-download -->
+
+      <div class="burgerMenu" onclick="myButton()">
+        <svg>
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.2"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness"
+              />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+        <!-- .header-container -->
       </div>
       <!-- .@media query -->
     </header>
     <!-- .main-header -->
 
-
-    <main class="main-wrapper">
-      <section class="section-hero">
-        <div class="container section-hero-container">
-          <div class="hero-content">
-            <h1>Welcome to the insert some lorem copy here</h1>
-            <h4>Vision, Learning, Collaboration.</h4>
-            <div class="hero-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="hero-img">
-            <img
-              src="img/hero.svg"
-              alt="cosmonaut stading on a joystick and dabbing"
-            />
-          </div>
-        </div>
-      </section>  
-      <!-- .section-hero -->
-    
-
-      <section class="section-about">
-        <div class="container">
-          <div class="about-titles">
-            <h6><span>About</span></h6>
-            <h3>IDS&apos;s Knowledge Management in Action</h3>
-          </div>
-        
-          <!-- .about-titles -->
-
-          
-          <div class="about-description">
-            <div class="about-img">
-            <img src="img/about.svg" alt="About picture" />
-            </div>
-            <p>
-              Sed metus ligula, auctor eget sagittis eu, elementum vel est.
-              Nam in dolor bibendum, mollis felis eget, ullamcorper odio.
-              Praesent nunc nisi, rutrum mollis cursus vel, aliquet a nunc.
-              Sed a varius sapien. Nulla et massa faucibus, pharetra felis at,
-              aliquam neque. Maecenas volutpat malesuada erat eu finibus.
-              Proin in magna id massa pharetra rutrum eu nec est. Etiam
-              ultrices tortor sapien, placerat ultrices nisl viverra non.
-            </p>
-          </div> 
-        
-          <!-- .about-description -->
-        </div>
-      </section> 
-      <!-- .section-about -->
- 
-      <section class="section-message">
-        <div class="container">
-          <div class="message-contact">
-            <div class="message-image">
-              <img
-                src="img/message.png"
-                alt="cosmonaut standing on the moon and fishing stars"
-              />
-            </div>
-            <div class="message-contact-info">
-              <h4>Lord Voldemort</h4>
-              <p>
-                Vice-President for Knowledge Management and Sustainable
-                Development Activities
-              </p>
-              <a href="mailto:lordVoldemort@example.com"
-                >lordVoldemort@example.com</a
-              >
-            </div>
-          </div>
-          <div class="message-description">
-            <div class="description-text">
-              <h2>IDS's Message</h2>
-              <p id="description">
-                Knowledge management has always been intertwined with the work
-                of Insomniac Design Study (IDS).
-              </p>
-              <p>
-                Sed aliquet eleifend dapibus. Aliquam erat volutpat. Aliquam
-                erat volutpat. Curabitur ante lorem, vehicula ut lacinia cursus,
-                posuere nec turpis. Praesent bibendum turpis ut leo porttitor,
-                sit amet tempor turpis convallis. Nullam nec pharetra turpis,
-                sed elementum arcu. Nullam venenatis sit amet justo id euismod.
-                Nulla dictum ligula commodo venenatis luctus. Duis at enim
-                suscipit, luctus nunc eu, varius lacus. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Mauris eu lacus congue, lacinia leo non, facilisis
-                tortor. Nam ultricies enim at dolor porta, at malesuada lorem
-                luctus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- .section-message-->
-
-      <section class="section-text">
-        <div class="content-text">
-          <div class="button">
-            <button class="circle">&#65291;</button>
-            <p>
-              Duis at enim suscipit, luctus nunc eu, varius lacus. Pellentesque
-              habitant morbi tristique senectus et netus et malesuada fames ac
-              turpis egestas. <br />
-              Mauris eu lacus congue ...
-            </p>
-        </div>
-        </div>
-      </section> 
-    
-      <!-- .section-text -->
-
-      <section class="vision-section">
-        <div class="vision-content">
-          <div class="engagement">
-            <h3>
-              IDS &apos;s Knowledge Management Journey: Two Decades of Learning,
-              Engagement, and Vision
-            </h3>
-          </div>
-          <div class="text-vision">
-            <div class="text-first">
-              <p>
-                The first president of Asian Development Bank (ADB), Takeshi
-                Watanabe, often emphasized that the bank was an institution that
-                “learns before it teaches.”
-              </p>
-            </div>
-            <div class="text-second">
-              <p>
-                Morbi sapien ex, tincidunt ut tincidunt et, luctus ac massa. In
-                non dapibus ante. Nulla facilisi. Nunc sollicitudin viverra nibh
-                nec malesuada. Maecenas elementum, magna eu semper efficitur,
-                mauris lacus rhoncus orci, nec suscipit augue est ac nulla.
-                Maecenas porttitor aliquet augue eget tincidunt. Donec tempor,
-                lacus at accumsan accumsan, purus nisl malesuada sapien, nec
-                placerat augue velit ut felis. Duis at enim suscipit, luctus
-                nunc eu, varius lacus. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Mauris
-                eu lacus congue, lacinia leo non, facilisis tortor.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="years">
-          <ul class="container-years">
-            <li class="link active"><a href="">1966-2004</a></li>
-            <li class="link"><a href="">2005-2009</a></li>
-            <li class="link"><a href="">2010-2014</a></li>
-            <li class="link"><a href="">2015-2021</a></li>
-            <li class="link"><a href="">2021-2030</a></li>
-          </ul>
-        </div>
-        <div class="stageVision">
-          <div class="stage">
-            <div class="img-stage">
-              <img id="stage-img" src="img/stage.jpg" alt="no-photo" />
-            </div>
-            <div class="text-stage">
-              <h3>Stage 1: The Vision</h3>
-              <h4>An institution that learns before it teaches</h4>
-              <p>
-                Strengthening knowledge management becomes an imperative as
-                countries demand IDS offer not just lending, but also bespoke
-                knowledge solutions.
-              </p>
-              <div class="read"><a href="">Read more &#8594;</a></div>
-            </div>
-          </div>
-          <div class="img-stars">
-            <img src="img/stars.jpg" alt="no-photo"/>
-          </div>
-          <div class="imgAstronaut">
-            <div class="ovals">
-              <img id="oval4" src="img/oval4.jpg" alt="no-photo" />
-              <img id="oval5" src="img/oval5.jpg" alt="no-photo" />
-              <img id="oval6" src="img/oval6.jpg" alt="no-photo" />
-            </div>
-            <div class="astronauts">
-              <img id="rectangle" src="img/rectangle.jpg" alt="no-photo" />
-            <img src="img/astronaut.jpg" alt="no-photo" />
-        </div> 
-      </section>
-      <!-- .section-vision-->
-      <section class="section-space">
-        <div class="content-space">
-          <h2>Space</h2>
-          <p>Aliquam ornare mauris ex, sed tincidunt neque facilisis id. Maecenas vitae ante nec massa varius volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent congue orci et nunc ultricies dapibus. Aliquam condimentum porttitor nulla. Phasellus suscipit risus sit amet mi interdum faucibus. Quisque egestas lorem ante, id eleifend velit mattis nec. 
-          </p>
-          <div class="view"><a href="">View all &#8594;</a></div>
-        </div>
-      </section> 
-      <!-- .section-space-->
-      <section class="ids-section">
-        <div class="ids-block">
-          <h2>The IDS</h2>
-          <p>Donec tristique dolor non lectus tincidunt, a lacinia libero suscipit. Quisque ultrices ex lectus, non lobortis nibh volutpat at. Vivamus auctor urna at nulla vulputate ultricies. Aliquam dictum est elit, a imperdiet ante sollicitudin et. Suspendisse accumsan non mauris vitae cursus. Nullam posuere dignissim arcu, quis dictum quam tempus eget. Sed scelerisque tortor eu hendrerit aliquam. Nullam maximus auctor vulputate. Maecenas in finibus metus. </p>
-        </div> 
-        <div class="tra">
-        <div class="ids-content"></div>
-        <div class="img-spaceman">
-          <img src="img/spaceman.jpg" alt="no-photo">
-        </div>
-    </div>
-      </section>
-      <!-- .section-spaceMan-->
-
-      <section class="podcast-section">
-        <div class="podcast-text">
-          <p>To learn even more about IDS&apos;s knowledge solutions, check out IDS &apos;s TED-x style talks and podcasts.</p>
-        </div>
-        <div class="button-podcast">
-        <button class="btn primary">View Podcast</button>
-        </div>
-      </section>
-      <!-- .section-podcast -->
-    </main> 
-    <!-- .main-wrapper -->
-
-    <footer class="main-footer">
-      <div class="about-footer">
-        <h3>About IDB Knowledge Advisory Services Center</h3>
-        <p>
-          Sed aliquet eleifend dapibus. Aliquam erat volutpat. Aliquam erat
-          volutpat. Curabitur ante lorem, vehicula ut lacinia cursus, posuere
-          nec turpis. Praesent bibendum turpis ut leo porttitor, sit amet tempor
-          turpis convallis. Nullam nec pharetra turpis, sed elementum arcu.
-          Nullam venenatis sit amet justo id euismod. Nulla dictum ligula
-          commodo venenatis luctus. Duis at enim suscipit, luctus nunc eu,
-          varius lacus. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Mauris eu lacus congue, lacinia
-          leo non, facilisis tortor. Nam ultricies enim at dolor porta, at
-          malesuada lorem luctus. Maecenas id porttitor magna. Suspendisse
-          aliquet semper nulla, in aliquam elit auctor quis. Vestibulum vel
-          turpis nibh.
-        </p>
-        <div class="contact_Us"><a href="">Contact us &#8594;</a></div>
-      </div>
-      <div class="about-footer">
-        <h3>About IDB</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lectus
-          nulla, mollis ac facilisis id, auctor sed justo. Sed ut consectetur
-          massa. Fusce tristique semper justo, ac porta tortor consectetur a. Ut
-          ullamcorper vel eros non efficitur. Fusce eu tortor ipsum. Suspendisse
-          varius interdum dapibus. Suspendisse potenti.
-        </p>
-        <div class="insomniac">
-          <a href="">&copy; 2021 Insomniac Design Study </a>
-          <br />
-          Website created by Insomniac Design, Inc.
-        </div>
-      </div>
-    </footer>
-    <!-- .main-footer -->
     <script src="js/app.js"></script>
-    <script src="js/burgger.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
-
