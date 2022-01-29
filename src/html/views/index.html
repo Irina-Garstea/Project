@@ -32,6 +32,7 @@
           <a href="#">Knowledge Solutions</a>          
         </nav>
         <!-- .header-nav -->
+
         <a class="btn primary" 
         href="pdf/document.pdf" 
         title="Download pdf.pdf file" 
@@ -41,7 +42,31 @@
         download="pdf.pdf">
         Download PDF</a>
       </div>
+    <div class="menuMobile">
+      <svg>
+        <defs>
+          <filter id="gooeyness">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+            <div class="plate plate1" onclick="this.classList.toggle('active')">
+              <svg class="burgger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 30,65 H 70"/>
+                <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"/>
+                <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"/>
+              </svg>
+              <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                <path class="line" d="M 34,32 L 66,68" />
+                <path class="line" d="M 66,32 L 34,68" />
+              </svg>
+    </div>
       <!-- .header-container -->
+      </div>
+      </div>
+      <!-- .@media query -->
     </header>
     <!-- .main-header -->
 
@@ -63,8 +88,9 @@
             />
           </div>
         </div>
-      </section>
+      </section>  
       <!-- .section-hero -->
+    
 
       <section class="section-about">
         <div class="container">
@@ -72,7 +98,10 @@
             <h6><span>About</span></h6>
             <h3>IDS&apos;s Knowledge Management in Action</h3>
           </div>
+        
           <!-- .about-titles -->
+
+          
           <div class="about-description">
             <div class="about-img">
             <img src="img/about.svg" alt="About picture" />
@@ -86,13 +115,13 @@
               Proin in magna id massa pharetra rutrum eu nec est. Etiam
               ultrices tortor sapien, placerat ultrices nisl viverra non.
             </p>
-          </div>
+          </div> 
+        
           <!-- .about-description -->
         </div>
-      </section>
+      </section> 
       <!-- .section-about -->
  
-
       <section class="section-message">
         <div class="container">
           <div class="message-contact">
@@ -137,7 +166,6 @@
           </div>
         </div>
       </section>
-
       <!-- .section-message-->
 
       <section class="section-text">
@@ -226,9 +254,8 @@
               <img id="rectangle" src="img/rectangle.jpg" alt="no-photo" />
             <img src="img/astronaut.jpg" alt="no-photo" />
         </div> 
-      </section> 
+      </section>
       <!-- .section-vision-->
-
       <section class="section-space">
         <div class="content-space">
           <h2>Space</h2>
@@ -236,9 +263,8 @@
           </p>
           <div class="view"><a href="">View all &#8594;</a></div>
         </div>
-      </section>
+      </section> 
       <!-- .section-space-->
-
       <section class="ids-section">
         <div class="ids-block">
           <h2>The IDS</h2>
@@ -262,7 +288,7 @@
         </div>
       </section>
       <!-- .section-podcast -->
-    </main>
+    </main> 
     <!-- .main-wrapper -->
 
     <footer class="main-footer">
@@ -302,6 +328,7 @@
     </footer>
     <!-- .main-footer -->
     <script src="js/app.js"></script>
+    <script src="js/burgger.js"></script>
   </body>
 </html>
 
