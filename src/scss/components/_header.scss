@@ -65,37 +65,38 @@
 /* @media query*/
 @media screen and (max-width: 1024px) {
   .header-nav {
-    display: grid;
-    grid-column: 1;
-    justify-content: stretch;
-    font-size: 24px;
-    padding: 50px;
+    display: none;
   }
 
-  .header-nav a {
-    padding: 5px;
-    border-bottom: 1px solid $colorPink;
-    padding: 10px;
-    line-height: 18px;
+  .header-logo {
+    position: fixed;
   }
 
-  .header-nav a:after {
-    background-color: $colorPink;
+  .header-nav::before {
     content: "";
-    display: inline-block;
-    position: relative;
-    vertical-align: medium;
+    font-size: 24px;
+    line-height: 18px;
+    padding-top: 120px;
+  }
+
+  .header-nav a::after {
+    content: "";
+    display: grid;
     width: 570px;
+    font-size: 24px;
+    border-bottom: 1px solid $colorPink;
   }
   .btn {
     display: grid;
     grid-row-start: 3;
     margin-top: 30px;
     width: 420px;
-    margin-left: 50px;
+    margin-top: 70px;
   }
 
   .header-container {
+    display: grid;
+    align-items: start;
     margin: 0;
   }
 
@@ -105,16 +106,13 @@
   }
 
   nav {
-    display: none;
     flex-direction: column;
     width: 100%;
-
-    // transition-timing-function: cubic-bezier(10, 2, 3, 1);
-    // transform: translateX(50rem);
-    // transition: 0.5s;
   }
   .burgerMenu {
     display: block;
+    position: fixed;
+    right: 0;
     cursor: pointer;
   }
 

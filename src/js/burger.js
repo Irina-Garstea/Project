@@ -8,8 +8,9 @@ closeMenu.addEventListener("click", close);
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0";
+  button.style.button = "flex";
 }
 
 function close() {
-  mainMenu.style.display = "-100%";
+  mainMenu.style.display = "none";
 }
