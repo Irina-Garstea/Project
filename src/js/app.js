@@ -1,3 +1,5 @@
+import './header';
+
 /* Import Styles */
 import '../scss/app.scss';
 
@@ -6,6 +8,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 /* Document ready put your JavaScript code here */
-$(() => {
-  
-});
+$(() => {});
