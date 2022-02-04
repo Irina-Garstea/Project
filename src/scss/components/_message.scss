@@ -1,38 +1,42 @@
 .section-message {
-  position: relative;
   margin-bottom: 100px;
+  position: relative;
+
   .container {
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
       grid-template-columns: max-content 1fr;
+    }
 
-      &::before,
-      &::after {
+    &::before,
+    &::after {
+      position: absolute;
+      width: calc(50% - 200px);
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      height: calc(100% - 378px);
+      background-color: $colorTurquoise;
+
+      @media (min-width: 1120px) {
+        height: calc(100% - 264px);
+      }
+    }
+
+    &::after {
+      @media (min-width: 768px) {
         content: "";
-        position: absolute;
-        z-index: -1;
-        width: calc(50% - 307px);
-      }
-
-      &::before {
-        top: 0;
-        left: 0;
-        height: calc(100% - 374px);
-        background-color: $colorTurquoise;
-
-        @media (min-width: 1120px) {
-          height: calc(100% - 226px);
-        }
-      }
-
-      &::after {
         bottom: 0;
         right: 0;
-        height: calc(100% - 450px);
         background-color: $colorRed;
+        height: 523px;
+      }
 
-        @media (min-width: 1120px) {
-          height: calc(100% - 310px);
-        }
+      @media (min-width: 1200px) {
+        height: 423px;
       }
     }
   }
@@ -46,9 +50,11 @@
   @media (min-width: 768px) {
     width: 320px;
   }
-  @media (min-width: 1120px) {
+
+  @media (min-width: 1200px) {
     width: 450px;
   }
+
   a {
     color: $colorWhite;
   }
@@ -56,6 +62,9 @@
 
 .message-contact-info {
   padding: 40px 25px;
+  @media (min-width: 1120px) {
+    padding: 40px 65px 59px 65px;
+  }
 
   h4 {
     margin-bottom: 18px;
@@ -67,145 +76,37 @@
 }
 
 .message-img {
+  display: grid;
+
   img {
     width: 100%;
-    object-fit: cover;
-    object-position: top;
   }
 }
+
 .message-description {
-  background-color: $colorGray;
-  font-family: $font-family-base;
   padding: 40px 25px;
+  font-family: $font-family-base;
+  background-color: $colorGray;
 
   @media (min-width: 768px) {
     margin-top: 120px;
   }
 
-  @media (min-width: 1120px) {
-    padding: 120px 105px;
+  @media (min-width: 1200px) {
+    padding: 120px 115px 93px 115px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
   }
 }
 
-.message-description-quote {
+.message-subtitle {
+  display: inline-block;
+  margin-bottom: 30px;
   color: $colorPink;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 33px;
 }
-// .section-message {
-//   margin-bottom: 100px;
-//   position: relative;
-
-//   .container {
-//     display: grid;
-//     grid-template-columns: max-content 1fr;
-
-// @media (max-width: 767px) {
-//   grid-template-columns: unset;
-//   transition-timing-function: ease-out;
-// }
-// }
-
-// &::before,
-// &::after {
-//   content: "";
-//   position: absolute;
-//   z-index: -1;
-//   width: calc(50% - 307px);
-// }
-
-// &::before {
-//   top: 0;
-//   left: 0;
-//   height: calc(100% - 290px);
-//   background-color: $colorTurquoise;
-
-// @media (max-width: 1199px) {
-//   height: calc(100% - 475px);
-// }
-// }
-
-// &::after {
-//   bottom: 0;
-//   right: 0;
-//   height: calc(100% - 355px);
-//   background-color: $colorRed;
-
-// @media (max-width: 1199px) {
-//   height: calc(100% - 430px);
-// }
-//   }
-// }
-
-// .message-contact-info {
-//   background-color: $colorGreen;
-//   color: $colorWhite;
-//   padding: 40px 55px 60px 65px;
-//   align-self: start;
-//   position: relative;
-
-// @media (max-width: 1199px) {
-//   position: initial;
-//   padding: 40px;
-// }
-
-//   p {
-//     padding-top: 18px;
-//     max-width: 315px;
-//   }
-
-//   a {
-//     color: $colorWhite;
-//   }
-// }
-
-// .message-img {
-//   img {
-//     object-position: top;
-//     object-fit: cover;
-
-// @media (max-width: 1199px) {
-//   max-width: 300px;
-// }
-// @media (max-width: 767px) {
-//   min-width: 100%;
-// }
-//   }
-// }
-
-// .message-contact {
-//   background-color: $colorGreen;
-//   display: grid;
-
-// @media (max-width: 1199px) {
-//   max-width: 300px;
-//   height: auto;
-// }
-
-// @media (max-width: 767px) {
-//   min-width: 100%;
-// }
-// }
-
-// .message-description {
-//   margin-top: 120px;
-//   padding: 120px 115px 93px 115px;
-//   background-color: $colorGray;
-
-// @media (max-width: 1199px) {
-//   margin-top: 140px;
-//   padding: 60px 50px;
-// }
-
-// @media (max-width: 767px) {
-//   margin-top: 0;
-//   padding: 40px 20px;
-// }
-
-//   h2 {
-//     margin-bottom: 20px;
-//   }
-
-//   #description {
-//     margin-bottom: 30px;
-//     color: $colorPink;
-//   }
-// }
