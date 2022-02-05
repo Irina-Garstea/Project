@@ -1,12 +1,9 @@
-@mixin circle($width: 50px, $height: 50px) {
-  width: $width;
-  height: $height;
+@mixin circle {
   border: none;
   border-radius: 50%;
   outline: none;
   background-color: $colorOrange;
   padding: 12px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
 }
 

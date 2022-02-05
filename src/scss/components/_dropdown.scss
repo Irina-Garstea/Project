@@ -1,12 +1,14 @@
 .section-dropdown {
   margin-top: 100px;
   margin-bottom: 120px;
+
   .container {
     @include grid;
 
     button {
       margin-top: 40px;
     }
+
     @media (max-width: $mediaMaxPhone) {
       grid-template-columns: auto;
       gap: 1px;
@@ -16,13 +18,18 @@
 
 .circle {
   @include circle;
+  width: $width;
+  height: $height;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
   @media (max-width: $mediaMaxPhone) {
-    height: 30px;
-    width: 30px;
+    width: $width-phone;
+    height: $height-phone;
   }
+
   @media (max-width: $mediaMaxTablet) {
-    height: 35px;
-    width: 35px;
+    width: $width-tablet;
+    height: $height-tablet;
     padding: 9px;
   }
 }
@@ -31,6 +38,7 @@
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .horizontal {
   @include horizontal;
 }
