@@ -13,9 +13,9 @@ $colorBlue-100: #023d74;
 $colorOrange: #f37e26;
 
 /* Typography */
-$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-ideal-sans: "Ideal Sans", $font-family-base;
-$font-mercury: "Mercury Text G2", $font-family-base;
+$font-family-base: 'Helvetica', Arial, sans-serif;
+$font-ideal-sans: 'Ideal Sans', $font-family-base;
+$font-mercury: 'Mercury Text G2', $font-family-base;
 
 $font-size-base: 18px;
 $font-size-base-mobile: 16px;
@@ -39,12 +39,3 @@ $container-small-max-width: 1004px;
 $zindex-sticky: 1020;
 $zindex-fixed: 1030;
 $zindex-backdrop: 1040;
-
-/* Size */
-$width: 50px;
-$height: 50px;
-$width-phone: 30px;
-$height-phone: 30px;
-
-$width-tablet: 35px;
-$height-tablet: 35px;

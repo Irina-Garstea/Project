@@ -15,7 +15,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       top: 0;
       left: 0;
       height: calc(100% - 456px);
@@ -28,7 +28,7 @@
 
     &::after {
       @media (min-width: 768px) {
-        content: "";
+        content: '';
         bottom: 0;
         right: 0;
         background-color: $colorRed;
@@ -63,8 +63,14 @@
 .message-contact-info {
   font-weight: $font-weight-normal;
   padding: 40px 25px;
+<<<<<<< HEAD
 
   @media (min-width: 1199px) {
+=======
+  font-weight: $font-weight-normal;
+
+  @media (min-width: 1120px) {
+>>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     padding: 40px 65px 59px 65px;
   }
 
@@ -90,6 +96,7 @@
   padding: 40px 25px;
   font-weight: $font-weight-normal;
   font-family: $font-family-base;
+  font-weight: $font-weight-normal;
   background-color: $colorGray;
 
   @media (min-width: 768px) {
@@ -102,6 +109,10 @@
 
   h2 {
     margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0 0 16px;
   }
 }
 
