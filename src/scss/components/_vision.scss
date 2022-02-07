@@ -1,287 +1,373 @@
-.vision-section {
+.section-journey {
   background-color: $colorBlue;
+  padding: 120px 0;
   color: $colorWhite;
-  width: 1680px;
-  .vision-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .engagement {
-      width: 343px;
-      height: 200px;
-      margin-top: 120px;
-      margin-left: 285px;
-    }
-    .text-vision {
-      .text-first {
-        p {
-          font-style: italic;
-          font-size: 22px;
-          line-height: 33px;
-          margin-top: 120px;
-          margin-right: 285px;
-        }
-      }
-      .text-second {
-        p {
-          margin-top: 30px;
-          margin-right: 285px;
-        }
-      }
-    }
-  }
 }
-.years {
-  padding: 50px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 80px;
-
-  .container-years {
-    border-top: 2px solid $colorWhite;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-  }
-
-  .link {
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
-    font-style: italic;
-  }
-
-  .link a {
-    text-decoration: none;
-    color: $colorWhite;
-  }
-
-  .link::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    position: absolute;
-    border-radius: 10px;
-    top: -18px;
-    transform: translatex(-50%);
-    border: 2px solid $colorWhite;
-  }
-  .active::after {
-    background: $colorPink;
-    border: 2px solid $colorPink;
-  }
-}
-.stageVision {
+.journey-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-left: 105px;
-  margin-top: 100px;
-
-  .img-stage {
-    #stage-img {
-      width: 90px;
-      border-radius: 50%;
-    }
-  }
-  .text-stage {
-    h3 {
-      font-style: italic;
-      padding-top: 36px;
-    }
-    h4 {
-      font-style: italic;
-      padding-top: 16px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 27px;
-      width: 440px;
-      height: 81px;
-    }
-  }
-
-  a {
-    color: $colorWhite;
-    text-decoration: none;
-    letter-spacing: 1px;
-  }
-  .read {
-    margin-top: 35px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .img-stars {
-    z-index: 1;
-    img {
-      width: 615px;
-      height: 615px;
-      border-bottom: 7px solid $colorPink;
-    }
-  }
-  .imgAstronaut {
-    position: absolute;
-    left: 809px;
-    z-index: 3;
-    right: 179px;
-    padding-top: 61px;
-    padding-bottom: 74px;
-
-    .ovals {
-      position: absolute;
-      z-index: 2;
-      margin-left: 20px;
-      margin-top: 3px;
-    }
-    #rectangle {
-      position: absolute;
-      z-index: 1;
-      margin-bottom: -8px;
-      height: 23px;
-    }
-    .astronauts {
-      img {
-        width: 791px;
-        height: 489px;
-      }
-    }
-  }
-}
-
-/*
-
-.journey {
-  background-color: $colorSky;
-  padding-top: 120px;
-}
-a {
-  color: white;
-}
-.ids-journey {
-  color: $colorWhite;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content 1fr;
+  margin-bottom: 80px;
+  gap: 227px;
   h3 {
-    max-width: 350px;
+    width: 343px;
+    font-family: $font-family-base;
+    font-weight: normal;
   }
-  h5 {
-    font-style: italic;
+}
+.description {
+  max-width: 540px;
+  em {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: $font-mercury;
   }
+
   p {
-    margin-top: 30px;
-    margin-bottom: 80px;
-  }
-}
-//............................ years-bar..............................//
-.years-bar {
-  color: $colorWhite;
-}
-.circle {
-  width: 11px;
-  height: 11px;
-  background-color: $colorWhite;
-  border-radius: 50px;
-  margin-bottom: 25px;
-  position: relative;
-}
-.year1,
-.year2,
-.year3,
-.year4,
-.year5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.year1,
-.year2,
-.year3,
-.year4 {
-  .circle::after {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 280px;
-    right: -280px;
-    top: 5px;
-  }
-}
-.year5 {
-  .circle::after {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 80px;
-    right: -80px;
-    opacity: 0.3;
-    top: 5px;
-  }
-}
-.year1 {
-  .circle {
-    background-color: $colorPink;
-  }
-  .circle::before {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 80px;
-    left: -80px;
-    opacity: 0.1;
-    top: 5px;
+    font-family: $font-family-base;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
-.years-bar {
-  display: flex;
-  gap: 200px;
-  margin-bottom: 100px;
-}
-.slides {
+// ...................axis..........................//
+
+.years-axis {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: $colorWhite;
-  padding-bottom: 120px;
-  a {
+  grid-template-columns: repeat(5, max-content);
+  gap: 196px;
+  margin-left: -50px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1320px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0.09),
+      rgba(252, 252, 252, 1)
+    );
+    top: 5px;
+    left: -57px;
+  }
+  button {
+    margin: 0;
+    padding: 30px 0 0 0;
+    border: 0;
+    background: transparent;
     color: $colorWhite;
-    margin-top: 35px;
-    display: flex;
-    gap: 20px;
-  }
-  h4 {
-    margin-top: 17px;
-  }
-  h3 {
-    margin-top: 37px;
-  }
-  .slide-image {
-    margin-top: 50px;
-    margin-bottom: 120px;
-    display: grid;
+    cursor: pointer;
     position: relative;
-    width: 100%;
-    .meeting {
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-    }
-    .sky {
-      z-index: 0;
+    &::before {
       position: absolute;
-      top: -70px;
-      left: 70px;
-      right: 0;
-      bottom: 0;
+      content: "";
+      width: 11px;
+      height: 11px;
+      background: $colorWhite;
+      top: 0px;
+      left: 49%;
+      border-radius: 10.5px;
+    }
+  }
+  button:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+  button:hover {
+    &::before {
+      background-color: $colorPink;
     }
   }
 }
- */
+// .section-vision {
+//   background-color: $colorBlue;
+//   color: $colorWhite;
+//   width: 1680px;
+
+//   .vision-content {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     .engagement {
+//       width: 343px;
+//       height: 200px;
+//       margin-top: 120px;
+//       margin-left: 285px;
+//     }
+//     .text-vision {
+//       .text-first {
+//         p {
+//           font-style: italic;
+//           font-size: 22px;
+//           line-height: 33px;
+//           margin-top: 120px;
+//           margin-right: 285px;
+//         }
+//       }
+//       .text-second {
+//         p {
+//           margin-top: 30px;
+//           margin-right: 285px;
+//         }
+//       }
+//     }
+//   }
+// }
+// .years {
+//   padding: 50px;
+//   text-align: center;
+//   width: 100%;
+//   margin: 0 auto;
+//   padding-top: 80px;
+
+//   .container-years {
+//     border-top: 2px solid $colorWhite;
+//     display: flex;
+//     list-style: none;
+//     padding: 0;
+//     justify-content: space-between;
+//     align-items: stretch;
+//     align-content: stretch;
+//   }
+
+//   .link {
+//     position: relative;
+//     margin-top: 10px;
+//     width: 100%;
+//     font-style: italic;
+//   }
+
+//   .link a {
+//     text-decoration: none;
+//     color: $colorWhite;
+//   }
+
+//   .link::after {
+//     content: "";
+//     width: 10px;
+//     height: 10px;
+//     background: #fff;
+//     position: absolute;
+//     border-radius: 10px;
+//     top: -18px;
+//     transform: translatex(-50%);
+//     border: 2px solid $colorWhite;
+//   }
+//   .active::after {
+//     background: $colorPink;
+//     border: 2px solid $colorPink;
+//   }
+// }
+// .stageVision {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   margin-left: 105px;
+//   margin-top: 100px;
+
+//   .img-stage {
+//     #stage-img {
+//       width: 90px;
+//       border-radius: 50%;
+//     }
+//   }
+//   .text-stage {
+//     h3 {
+//       font-style: italic;
+//       padding-top: 36px;
+//     }
+//     h4 {
+//       font-style: italic;
+//       padding-top: 16px;
+//     }
+//     p {
+//       font-size: 18px;
+//       line-height: 27px;
+//       width: 440px;
+//       height: 81px;
+//     }
+//   }
+
+//   a {
+//     color: $colorWhite;
+//     text-decoration: none;
+//     letter-spacing: 1px;
+//   }
+//   .read {
+//     margin-top: 35px;
+//     font-weight: bold;
+//     text-transform: uppercase;
+//   }
+//   .img-stars {
+//     z-index: 1;
+//     img {
+//       width: 615px;
+//       height: 615px;
+//       border-bottom: 7px solid $colorPink;
+//     }
+//   }
+//   .imgAstronaut {
+//     position: absolute;
+//     left: 809px;
+//     z-index: 3;
+//     right: 179px;
+//     padding-top: 61px;
+//     padding-bottom: 74px;
+
+//     .ovals {
+//       position: absolute;
+//       z-index: 2;
+//       margin-left: 20px;
+//       margin-top: 3px;
+//     }
+//     #rectangle {
+//       position: absolute;
+//       z-index: 1;
+//       margin-bottom: -8px;
+//       height: 23px;
+//     }
+//     .astronauts {
+//       img {
+//         width: 791px;
+//         height: 489px;
+//       }
+//     }
+//   }
+// }
+
+// /*
+
+// .journey {
+//   background-color: $colorSky;
+//   padding-top: 120px;
+// }
+// a {
+//   color: white;
+// }
+// .ids-journey {
+//   color: $colorWhite;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   h3 {
+//     max-width: 350px;
+//   }
+//   h5 {
+//     font-style: italic;
+//   }
+//   p {
+//     margin-top: 30px;
+//     margin-bottom: 80px;
+//   }
+// }
+// //............................ years-bar..............................//
+// .years-bar {
+//   color: $colorWhite;
+// }
+// .circle {
+//   width: 11px;
+//   height: 11px;
+//   background-color: $colorWhite;
+//   border-radius: 50px;
+//   margin-bottom: 25px;
+//   position: relative;
+// }
+// .year1,
+// .year2,
+// .year3,
+// .year4,
+// .year5 {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+// .year1,
+// .year2,
+// .year3,
+// .year4 {
+//   .circle::after {
+//     content: "";
+//     position: absolute;
+//     margin: auto;
+//     height: 2px;
+//     background: white;
+//     width: 280px;
+//     right: -280px;
+//     top: 5px;
+//   }
+// }
+// .year5 {
+//   .circle::after {
+//     content: "";
+//     position: absolute;
+//     margin: auto;
+//     height: 2px;
+//     background: white;
+//     width: 80px;
+//     right: -80px;
+//     opacity: 0.3;
+//     top: 5px;
+//   }
+// }
+// .year1 {
+//   .circle {
+//     background-color: $colorPink;
+//   }
+//   .circle::before {
+//     content: "";
+//     position: absolute;
+//     margin: auto;
+//     height: 2px;
+//     background: white;
+//     width: 80px;
+//     left: -80px;
+//     opacity: 0.1;
+//     top: 5px;
+//   }
+// }
+
+// .years-bar {
+//   display: flex;
+//   gap: 200px;
+//   margin-bottom: 100px;
+// }
+// .slides {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   color: $colorWhite;
+//   padding-bottom: 120px;
+//   a {
+//     color: $colorWhite;
+//     margin-top: 35px;
+//     display: flex;
+//     gap: 20px;
+//   }
+//   h4 {
+//     margin-top: 17px;
+//   }
+//   h3 {
+//     margin-top: 37px;
+//   }
+//   .slide-image {
+//     margin-top: 50px;
+//     margin-bottom: 120px;
+//     display: grid;
+//     position: relative;
+//     width: 100%;
+//     .meeting {
+//       z-index: 1;
+//       top: 50%;
+//       left: 50%;
+//     }
+//     .sky {
+//       z-index: 0;
+//       position: absolute;
+//       top: -70px;
+//       left: 70px;
+//       right: 0;
+//       bottom: 0;
+//     }
+//   }
+// }
+//  */

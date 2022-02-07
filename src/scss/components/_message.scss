@@ -18,10 +18,10 @@
       content: "";
       top: 0;
       left: 0;
-      height: calc(100% - 378px);
+      height: calc(100% - 456px);
       background-color: $colorTurquoise;
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1199px) {
         height: calc(100% - 264px);
       }
     }
@@ -32,10 +32,10 @@
         bottom: 0;
         right: 0;
         background-color: $colorRed;
-        height: 523px;
+        height: 532px;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1199px) {
         height: 423px;
       }
     }
@@ -51,7 +51,7 @@
     width: 320px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1199px) {
     width: 450px;
   }
 
@@ -61,17 +61,20 @@
 }
 
 .message-contact-info {
+  font-weight: $font-weight-normal;
   padding: 40px 25px;
-  @media (min-width: 1120px) {
+
+  @media (min-width: 1199px) {
     padding: 40px 65px 59px 65px;
   }
 
   h4 {
+    font-weight: $font-weight-normal;
     margin-bottom: 18px;
   }
 
   p {
-    margin-bottom: 11px;
+    margin: 0 0 11px;
   }
 }
 
@@ -85,6 +88,7 @@
 
 .message-description {
   padding: 40px 25px;
+  font-weight: $font-weight-normal;
   font-family: $font-family-base;
   background-color: $colorGray;
 
