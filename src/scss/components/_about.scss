@@ -47,6 +47,9 @@
     max-width: 255px;
     font-weight: $font-weight-normal;
   }
+  a {
+    text-decoration: underline;
+  }
 
   h6 {
     margin-bottom: 60px;

@@ -24,22 +24,12 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-<<<<<<< HEAD
-  background-color: $colorOrange;
-=======
   background-color: $colorRed;
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
   color: $colorWhite;
   cursor: pointer;
 
   @media (max-width: 1199px) {
     margin: 2px 35px 0 0;
-  }
-
-  @media (max-width: 1023px) {
-    min-width: 35px;
-    height: 35px;
-    margin: 10px 35px 0 0;
   }
 
   @media (max-width: 767px) {
@@ -49,17 +39,9 @@
     align-self: start;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &::before,
   &::after {
-<<<<<<< HEAD
     content: "";
-=======
-    content: '';
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     position: absolute;
     background-color: currentColor;
     border-radius: 2px;
@@ -86,7 +68,6 @@
     @media (max-width: 1023px) {
       height: 18px;
     }
-<<<<<<< HEAD
 
     @media (max-width: 767px) {
       height: 16px;
@@ -96,17 +77,6 @@
   &.is-active {
     opacity: 1;
 
-=======
-
-    @media (max-width: 767px) {
-      height: 16px;
-    }
-  }
-
-  &.is-active {
-    opacity: 1;
-
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     &::after {
       transform: rotate(90deg);
     }
@@ -117,26 +87,15 @@
   max-width: 760px;
   font-size: 22px;
   line-height: 1.5;
-<<<<<<< HEAD
   font-weight: $font-weight-light;
 
   @media (max-width: 1199px) {
     font-style: italic;
-=======
-  font-style: italic;
-  font-weight: $font-weight-light;
-
-  @media (max-width: 1199px) {
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     font-size: 18px;
     line-height: 27px;
   }
 
   @media (max-width: 1023px) {
-<<<<<<< HEAD
-    font-style: italic;
-=======
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     max-width: 500px;
   }
 
@@ -158,14 +117,11 @@
   }
 
   p {
-<<<<<<< HEAD
     @include lineClamp(3);
-=======
-    @include lineClamp(2);
->>>>>>> 3de60675c5649e87243fada13f69e7af9451c500
     margin: 0 0 40px;
 
     @media (max-width: 767px) {
+      @include lineClamp(2);
       margin: 0 0 30px;
     }
 
