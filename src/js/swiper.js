@@ -7,7 +7,6 @@ var swiper = new Swiper(".journey-slider", {
 
   pagination: {
     el: ".swiper-pagination",
-
     clickable: true,
     bulletClass: "journey-bullet",
     bulletActiveClass: "is-active",
