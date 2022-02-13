@@ -4,6 +4,9 @@
   color: $colorWhite;
   .container {
     overflow: hidden;
+    @media (max-width: 767px) {
+      max-width: 360px;
+    }
   }
 }
 .journey-content {
