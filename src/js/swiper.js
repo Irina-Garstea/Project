@@ -1,5 +1,4 @@
 import Swiper, { Navigation, Pagination, EffectFade } from "swiper";
-// import $ from 'jquery';
 let Years = ["1996-2004", "2005-2009", "2010-2014", "2015-2021", "2021-2030"];
 
 var swiper = new Swiper(".journey-slider", {
@@ -22,6 +21,8 @@ var swiper = new Swiper(".journey-slider", {
   },
 });
 
-// var spaceswiper = new Swiper(".journey-slider", {
-//   modules: [Pagination, Navigation, EffectFade],
-// });
+var spaceswiper = new Swiper(".space-slider", {
+  modules: [Pagination, Navigation, EffectFade],
+  el: ".space-slider",
+  loop: true,
+});
