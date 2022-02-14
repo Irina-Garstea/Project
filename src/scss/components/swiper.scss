@@ -1,68 +1,199 @@
-.swiper {
+.journey-slider {
   width: $container-max-width;
   height: 100%;
-  @media (max-width: 1199px) {
-    width: 768px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    position: absolute;
+    top: 0;
+    max-width: $container-max-width;
+
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-content: space-between;
+    gap: 90px;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    &.slide-1 {
+      left: 0;
+    }
+
+    &.slide-2 {
+      left: 100%;
+    }
+
+    &.slide-3 {
+      left: 200%;
+    }
+
+    &.slide-4 {
+      left: 300%;
+    }
+
+    &.slide-5 {
+      left: 400%;
+    }
   }
 }
-.swiper-wrapper {
+
+.journey-container {
+  position: relative;
+  display: flex;
   width: $container-max-width;
   height: 550px;
-  display: flex;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+/* Journey Pagination */
+.journey-pagination {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  @include fluidValue(column-gap, 194, 77, 1680, 768);
+  max-width: 1320px;
+  margin: 0 auto 60px;
+  z-index: 1;
+
+  @media (max-width: 1199px) {
+    gap: 0;
+    max-width: 768px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    direction: rtl;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(132, 191, 65, 0.09),
+      rgba(252, 252, 252, 1)
+    );
+    border-image-slice: 1;
+  }
 }
 
-.swiper-slide {
-  max-width: $container-max-width;
-  position: absolute;
-  top: 0;
-}
-.slide1 {
-  left: 0;
-}
-.slide2 {
-  left: 100%;
-}
-.slide3 {
-  left: 200%;
-}
-.slide4 {
-  left: 300%;
-}
-.slide5 {
-  left: 400%;
-}
-.slide1,
-.slide2,
-.slide3,
-.slide4,
-.slide5 {
+.journey-bullet {
+  position: relative;
   display: grid;
-  grid-template-columns: max-content 1fr;
-  justify-content: space-between;
-  gap: 90px;
+  justify-items: center;
+  padding-top: 15px;
+  color: $colorWhite;
+  font-weight: $font-weight-normal;
+  font-style: italic;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 
-  .slide-icon {
-    display: grid;
-    background-color: $colorPink;
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 767px) {
+    position: absolute;
+    top: -42px;
+    width: 100%;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    visibility: hidden;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: currentColor;
+    transition: background-color 0.5s ease-in;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      position: relative;
+      top: unset;
+    }
+  }
+
+  &.is-active {
+    @media (max-width: 767px) {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &::before {
+      background-color: $colorPink;
+      animation: pulsePaginationBulletAnimation 2s infinite;
+    }
+  }
+}
+
+.slide-icon {
+  margin-bottom: 37px;
+
+  @media (min-width: 1200px) {
     width: 90px;
     height: 90px;
-    border-radius: 45px;
-    margin-bottom: 37px;
-    justify-content: center;
-    align-items: center;
   }
-  .icon2 {
-    background-color: $colorYellow;
+
+  circle {
+    fill: $colorPink;
   }
-  .icon3 {
-    background-color: $colorOrange;
+
+  path {
+    fill: $colorWhite;
   }
-  .icon4 {
-    background-color: $colorGreen;
+
+  .slide-2 & {
+    circle {
+      fill: $colorYellow;
+    }
   }
-  .icon5 {
-    background-color: $colorTurquoise;
+
+  .slide-3 & {
+    circle {
+      fill: $colorRed;
+    }
+  }
+
+  .slide-4 & {
+    circle {
+      fill: $colorGreen;
+    }
+  }
+
+  .slide-5 & {
+    circle {
+      fill: $colorTurquoise;
+    }
+  }
+}
+
+.slide-info {
+  max-width: 440px;
+  padding-top: 55px;
+
+  @media (max-width: 1199px) {
+    max-width: 296px;
+    padding-top: 0px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
   }
 
   h3 {
@@ -102,53 +233,97 @@
     line-height: 24px;
     display: flex;
     gap: 20px;
+  }
+}
 
-    img {
-      align-items: center;
+.arrow-white {
+  align-items: center;
+  transition: transform 0.6s;
+}
+
+.arrow-white:hover {
+  transform: translate(20px);
+}
+
+.slide-image1 {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  .image {
+    background-color: $colorWhite;
+  }
+
+  .meeting {
+    @media (max-width: 1199px) {
+      max-width: 335px;
+      max-height: 189px;
     }
   }
 }
+
 .frame {
   position: absolute;
-  z-index: 1;
   top: 40px;
+  padding-bottom: 8px;
+  background-color: $colorGray;
+  border-radius: 5px;
+  z-index: 1;
 
   @media (max-width: 1199px) {
-    top: 150px;
+    margin-top: 70px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 410px;
+    left: 0;
+    background-color: $colorWhite;
+    height: 9px;
+    width: 692px;
+    border-radius: 0px 0px 6px 6px;
+
+    @media (max-width: 1199px) {
+      width: 335px;
+      height: 9px;
+      top: 194px;
+    }
   }
 
   .frame-bar {
     background-color: $colorGray;
     height: 20px;
     width: 692px;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 410px;
-      left: 0;
-      background-color: $colorWhite;
+    @media (max-width: 1199px) {
+      width: 335px;
       height: 9px;
-      width: 692px;
-      border-radius: 0px 0px 6px 6px;
-
-      @media (max-width: 1199px) {
-        top: 215px;
-      }
     }
   }
+
   .circles {
     display: flex;
     padding: 7px;
+
+    @media (max-width: 1199px) {
+      padding: 3px;
+    }
   }
 
   .circle {
-    background-color: $colorYellow;
+    background-color: $colorOrange;
     height: 8px;
     width: 8px;
     border-radius: 50%;
     margin-left: 16px;
+
+    @media (max-width: 1199px) {
+      height: 4px;
+      width: 4px;
+      margin-left: 10px;
+    }
 
     &::before,
     &::after {
@@ -162,14 +337,27 @@
     &::before {
       background-color: $colorRed;
       left: 8px;
+
+      @media (max-width: 1199px) {
+        height: 4px;
+        width: 4px;
+        left: 5px;
+      }
     }
 
     &::after {
       background-color: $colorGreen;
       left: 38px;
+
+      @media (max-width: 1199px) {
+        height: 4px;
+        width: 4px;
+        left: 21px;
+      }
     }
   }
 }
+
 .sky {
   position: absolute;
   z-index: -1;
@@ -177,134 +365,28 @@
   left: 49%;
   border-bottom: 10px solid $colorPink;
 
+  @media (max-width: 1199px) {
+    max-width: 263px;
+    height: 315px;
+    left: 34%;
+    top: 70px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   &.borderYellow {
     border-bottom: 10px solid $colorYellow;
   }
-  &.borderOrange {
-    border-bottom: 10px solid $colorOrange;
+  &.borderRed {
+    border-bottom: 10px solid $colorRed;
   }
   &.borderGreen {
     border-bottom: 10px solid $colorGreen;
   }
-  &.borderTurquoise {
+  &.borderBlue {
     border-bottom: 10px solid $colorTurquoise;
-  }
-  @media (max-width: 1199px) {
-    max-width: 337px;
-    height: auto;
-    top: 100px;
-  }
-}
-
-.swiper-pagination-bullet {
-  background-color: $colorWhite;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: grid;
-  justify-content: center;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: $colorPink;
-  display: grid;
-  justify-content: center;
-  position: relative;
-}
-
-.swiper-pagination {
-  position: relative;
-  display: flex;
-  margin: 0 auto;
-  gap: 194px;
-  justify-content: space-around;
-  z-index: 1;
-  margin-bottom: 60px;
-  max-width: 1320px;
-
-  @media (max-width: 1199px) {
-    padding-bottom: 70px;
-    width: 100%;
-    gap: 70px;
-    justify-content: center;
-  }
-
-  @media (max-width: 767px) {
-    float: left;
-    direction: rtl;
-    align-content: center;
-    margin: 0 auto;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(132, 191, 65, 0.09),
-      rgba(252, 252, 252, 1)
-    );
-    border-image-slice: 1;
-  }
-}
-
-.journey-bullet {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  padding-top: 15px;
-  color: $colorWhite;
-  font-weight: $font-weight-normal;
-  font-style: italic;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-
-  &:focus {
-    outline: none;
-  }
-
-  @media (max-width: 767px) {
-    position: absolute;
-    top: -44px;
-    right: 0;
-    width: 100%;
-    grid-template-columns: max-content max-content;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: currentColor;
-    transition: background-color 0.5s ease-in;
-    z-index: 1;
-    @media (max-width: 767px) {
-      position: relative;
-      top: unset;
-    }
-  }
-
-  &.is-active {
-    @media (max-width: 767px) {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    &::before {
-      background-color: $colorPink;
-      animation: pulsePaginationBulletAnimation 2s infinite;
-    }
   }
 }
 
@@ -317,70 +399,5 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba($colorPink, 0);
-  }
-}
-
-.image {
-  background-color: $colorWhite;
-}
-.meeting {
-  -webkit-transition: 5s ease-in;
-  -moz-transition: 5s ease-in;
-  -o-transition: 5s ease-in;
-  transition: 5s ease-in;
-  -webkit-animation-name: slides;
-  -webkit-animation-duration: 5s;
-  animation-name: slides;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-  @media (max-width: 1199px) {
-    max-width: 335px;
-    height: auto;
-  }
-}
-
-@keyframes slides {
-  from {
-    transform: translate(0px, 0);
-  }
-  to {
-    transform: translate(0px, -100px);
-  }
-}
-
-.swiper-slide-active {
-  .slide-info {
-    a {
-      text-decoration: none;
-    }
-    max-width: 440px;
-    padding-top: 55px;
-    animation: 1s slide-up;
-
-    @media (max-width: 1199px) {
-      max-width: 296px;
-    }
-    @media (max-width: 767px) {
-      max-width: 524px;
-    }
-  }
-}
-
-@keyframes slide-up {
-  from {
-    margin-top: 100%;
-    height: 300%;
-  }
-  to {
-    margin-top: 0%;
-    height: 100%;
-  }
-}
-
-.slide-image {
-  @media (max-width: 767px) {
-    display: none;
   }
 }

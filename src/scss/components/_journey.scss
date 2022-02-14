@@ -2,20 +2,20 @@
   background-color: $colorBlue;
   padding: 120px 0;
   color: $colorWhite;
+
   .container {
     overflow: hidden;
-    @media (max-width: 767px) {
-      max-width: 360px;
-    }
   }
 }
+
 .journey-content {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 227px;
   margin-bottom: 80px;
+  gap: 227px;
   @include fluidValue("gap", 227, 64, 2000, 1200);
   @include fluidValue("gap", 64, 20, 1199, 768);
+
   @media (max-width: 767px) {
     grid-template-columns: unset;
   }
@@ -23,7 +23,8 @@
   h3 {
     max-width: 343px;
     font-family: $font-family-base;
-    font-weight: $font-weight-normal;
+    font-weight: normal;
+
     @media (max-width: 1199px) {
       max-width: 296px;
       font-family: $font-ideal-sans;
@@ -32,12 +33,12 @@
     }
   }
 }
-
 .description {
   @media (min-width: 768px) {
     max-width: 540px;
     justify-self: end;
   }
+
   max-width: 100%;
 
   em {
@@ -50,6 +51,6 @@
 
   p {
     font-family: $font-family-base;
-    font-weight: $font-weight-normal;
+    font-weight: normal;
   }
 }

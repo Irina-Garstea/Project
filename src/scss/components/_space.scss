@@ -1,29 +1,102 @@
 .section-space {
-  .content-space {
+  position: relative;
+  margin: 120px 0px 100px 0px;
+
+  &::before {
+    content: "";
     background-color: $colorGray;
-    width: 1155px;
-    height: 680px;
-    margin-top: 120px;
-    margin-left: 0;
-    padding-left: 285px;
-    padding-top: 251px;
-    padding-right: 430px;
-    padding-bottom: 235px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30%;
+    height: 100%;
+    z-index: -1;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    @include fluidValue(height, 680, 450, 1680, 768);
+  }
+}
+.space-content {
+  align-self: center;
+  h2 {
+    margin-bottom: 20px;
+    font-family: $font-family-base;
   }
   p {
-    width: 440px;
-    height: 194px;
+    font-family: $font-family-base;
     font-size: 18px;
     line-height: 27px;
-  }
-  .view {
-    padding-top: 40px;
-    text-transform: uppercase;
-    a {
-      color: $colorBlue;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
+    margin-bottom: 40px;
+    @include fluidValue(width, 440, 336, 1680, 1199);
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      font-style: italic;
+      line-height: 24px;
     }
   }
+  a {
+    display: flex;
+    gap: 22px;
+    color: $colorPink;
+    @media (max-width: 1199px) {
+      gap: 21px;
+    }
+  }
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $font-ideal-sans;
+  }
+}
+
+.space-slider {
+  animation: rotation 20s linear infinite;
+  border: solid 1px $colorPink;
+  background: transparent;
+  border-radius: 50%;
+  @include fluidValue(width, 480, 280, 1680, 1200);
+  @include fluidValue(height, 480, 280, 1680, 1200);
+  @include fluidValue(width, 280, 296, 1199, 768);
+  @include fluidValue(height, 280, 296, 1199, 768);
+  @include fluidValue(width, 296, 0, 760, 0);
+  @include fluidValue(height, 296, 0, 760, 0);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px $colorPink;
+    top: -5px;
+    background-color: $colorWhite;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(395deg);
+  }
+}
+
+.space-wrapper {
+  animation-play-state: paused;
+  border-radius: 50%;
+  background-color: $colorWhite;
+  border: solid 1px $colorPink;
+  @include fluidValue(width, 250, 143, 1680, 1200);
+  @include fluidValue(height, 250, 143, 1680, 1200);
+  @include fluidValue(width, 140, 155, 1199, 768);
+  @include fluidValue(height, 140, 155, 1199, 768);
+  @include fluidValue(width, 155, 0, 767, 0);
+  @include fluidValue(height, 155, 0, 767, 0);
 }
