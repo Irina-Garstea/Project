@@ -23,6 +23,4 @@ var swiper = new Swiper(".journey-slider", {
 
 var spaceswiper = new Swiper(".space-slider", {
   modules: [Pagination, Navigation, EffectFade],
-  el: ".space-slider",
-  loop: true,
 });
