@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   @include fluidValue(gap, 194, 77, 1680, 768);
-  @include fluidValue(width, 1320, 768, 1680, 768);
+  @include fluidValue(width, 1320, 750, 1680, 768);
   margin: 0 auto 60px;
   z-index: 1;
 
@@ -74,6 +74,10 @@
     width: 100%;
     @include fluidValue(gap, 90, 85, 1680, 1200);
     @include fluidValue(gap, 10, 30, 1199, 768);
+    opacity: 0 !important;
+    &.swiper-slide-active {
+      opacity: 1 !important;
+    }
   }
 }
 .slide-info {
