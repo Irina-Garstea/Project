@@ -19,6 +19,9 @@
     );
     border-image-slice: 1;
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .journey-bullet {
@@ -53,6 +56,19 @@
     &::before {
       background-color: $colorPink;
       animation: pulsePaginationBulletAnimation 2s infinite;
+    }
+  }
+  @keyframes pulsePaginationBulletAnimation {
+    0% {
+      box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgba($colorPink, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba($colorPink, 0);
     }
   }
 }
@@ -160,6 +176,47 @@ a {
   gap: 20px;
 }
 
+.slide-icon {
+  margin-bottom: 37px;
+
+  @media (min-width: 1199px) {
+    width: 90px;
+    height: 90px;
+  }
+
+  circle {
+    fill: $colorPink;
+  }
+
+  path {
+    fill: $colorWhite;
+  }
+
+  .slide2 & {
+    circle {
+      fill: $colorYellow;
+    }
+  }
+
+  .slide3 & {
+    circle {
+      fill: $colorRed;
+    }
+  }
+
+  .slide4 & {
+    circle {
+      fill: $colorGreen;
+    }
+  }
+
+  .slide5 & {
+    circle {
+      fill: $colorTurquoise;
+    }
+  }
+}
+
 .slide-image {
   position: relative;
   @include fluidValue(width, 692, 540, 1680, 1200);
@@ -177,6 +234,23 @@ a {
 
     &.borderPink {
       border-bottom: 7px solid $colorPink;
+    }
+  }
+  .sky {
+    &.borderYellow {
+      border-bottom: 10px solid $colorYellow;
+    }
+
+    &.borderRed {
+      border-bottom: 10px solid $colorRed;
+    }
+
+    &.borderGreen {
+      border-bottom: 10px solid $colorGreen;
+    }
+
+    &.borderBlue {
+      border-bottom: 10px solid $colorTurquoise;
     }
   }
 }
