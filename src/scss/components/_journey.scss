@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   margin-bottom: 80px;
-  gap: 227px;
+  // gap: 227px;
   @include fluidValue(gap, 227, 64, 1680, 768);
 
   @media (max-width: 767px) {
