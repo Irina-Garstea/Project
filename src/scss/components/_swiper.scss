@@ -19,6 +19,7 @@
     );
     border-image-slice: 1;
   }
+
   @media (max-width: 767px) {
     display: none;
   }
@@ -58,6 +59,7 @@
       animation: pulsePaginationBulletAnimation 2s infinite;
     }
   }
+
   @keyframes pulsePaginationBulletAnimation {
     0% {
       box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
@@ -77,17 +79,16 @@
   position: relative;
   display: flex;
   height: 550px;
+  width: max-content;
 }
 
 .journey-slider {
   overflow: hidden;
-  width: 100%;
 
   .swiper-slide {
     display: grid;
     top: 0;
     grid-template-columns: max-content 1fr;
-    width: 100%;
     @include fluidValue(gap, 90, 85, 1680, 1200);
     @include fluidValue(gap, 10, 30, 1199, 768);
     opacity: 0 !important;
@@ -98,6 +99,7 @@
     }
   }
 }
+
 .slide-info {
   @include fluidValue(width, 415, 375, 1680, 1200);
   @include fluidValue(width, 375, 296, 1200, 768);
@@ -147,6 +149,7 @@ a {
 
 .slide-icon {
   margin-bottom: 37px;
+
   @media (min-width: 1199px) {
     width: 90px;
     height: 90px;
@@ -189,6 +192,7 @@ a {
   position: relative;
   @include fluidValue(width, 692, 540, 1680, 1200);
   @include fluidValue(width, 370, 335, 1200, 768);
+
   .sky {
     position: absolute;
     margin-left: auto;
@@ -204,6 +208,7 @@ a {
       border-bottom: 7px solid $colorPink;
     }
   }
+
   .sky {
     &.borderYellow {
       border-bottom: 10px solid $colorYellow;
@@ -222,6 +227,7 @@ a {
     }
   }
 }
+
 .frame {
   position: absolute;
   margin-left: auto;
@@ -236,17 +242,20 @@ a {
   @include fluidValue(width, 692, 540, 1680, 1200);
   @include fluidValue(width, 450, 335, 1200, 768);
   @include fluidValue(width, 290, 335, 1199, 768);
+
   img {
     background-color: $colorWhite;
     height: 100%;
     width: 100%;
   }
 }
+
 .circles {
   display: grid;
   @include fluidValue(width, 55, 28, 1680, 768);
   @include fluidValue(height, 22, 9, 1680, 768);
 }
+
 .circle {
   position: relative;
   align-self: center;
@@ -264,10 +273,12 @@ a {
     @include fluidValue(width, 8, 4, 1680, 768);
     @include fluidValue(height, 8, 4, 1680, 768);
   }
+
   &::before {
     background-color: $colorRed;
     @include fluidValue("right", 16, 8, 1680, 768);
   }
+
   &::after {
     background-color: $colorGreen;
     @include fluidValue("left", 16, 8, 1680, 768);

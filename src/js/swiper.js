@@ -9,8 +9,8 @@ const swiper = new Swiper(".journey-slider", {
   speed: 1000,
   fadeEffect: {
     crossFade: true,
+    slidesPerView: 5,
   },
-  slidesPerView: 5,
 
   pagination: {
     el: ".journey-pagination",
