@@ -11,10 +11,17 @@
     height: 100%;
     background-color: $colorGray;
     z-index: -1;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 50%;
+      top: 50%;
+    }
   }
 
   .container {
     display: grid;
+    gap: 190px;
 
     @media (min-width: 768px) {
       justify-content: space-between;
@@ -26,6 +33,7 @@
   .space-content {
     padding: 171px 0;
     align-self: center;
+    justify-content: center;
 
     @media (max-width: 1199px) {
       max-width: 100%;
@@ -44,16 +52,21 @@
     }
 
     p {
-      font-family: $font-family-base;
+      @include fluidValue(max-width, 440, 336, 1680, 1200);
+      @include fluidValue(max-width, 336, 320, 1200, 768);
+      @include fluidValue(
+        font-family,
+        $font-family-base,
+        $font-mercury,
+        1680,
+        678
+      );
+      @include fluidValue(padding-bottom, 20, 40, 1680, 768);
+      @include fluidValue(font-size, 18, 16, 1680, 768);
+      @include fluidValue(line-height, 27, 24, 1680, 768);
       font-weight: normal;
-      padding-bottom: 20px;
-      max-width: 460px;
-
       @media (max-width: 1199px) {
-        font-family: $font-mercury;
         font-style: italic;
-        font-size: 16px;
-        line-height: 24px;
       }
     }
 
@@ -94,6 +107,10 @@
     background-color: $colorGray;
     z-index: -1;
     transform: translateX(-50%);
+
+    @media (max-width: 768px) {
+      transform: translateY(50%);
+    }
   }
 }
 
@@ -138,6 +155,7 @@
       height: 12px;
       border-width: 3px;
     }
+
     @media (max-width: 767px) {
       width: 12px;
       height: 12px;
@@ -210,9 +228,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: $colorPink;
-    border: 1px solid;
+    border: 1px solid $colorPink;
     background-color: $colorWhite;
+    animation: switch-animation 2s infinite linear;
 
     &:not(.swiper-slide-active) {
       visibility: hidden;
@@ -229,6 +247,55 @@
       pointer-events: auto;
       transition: opacity 0s linear !important;
     }
+  }
+}
+
+@keyframes switch-animation {
+  0% {
+    border-color: $colorPink;
+  }
+  8% {
+    border-color: $colorRed;
+  }
+
+  16% {
+    border-color: $colorTurquoise;
+  }
+
+  24% {
+    border-color: $colorGreen;
+  }
+
+  32% {
+    color: $colorBlack;
+  }
+
+  42% {
+    color: $colorOrange;
+  }
+
+  50% {
+    border-color: $colorBlue;
+  }
+
+  60% {
+    color: $colorYellow;
+  }
+
+  70% {
+    border-color: $colorTurquoise;
+  }
+
+  80% {
+    border-color: $colorBeeYellow;
+  }
+
+  90% {
+    border-color: $colorEvaGreen;
+  }
+
+  100% {
+    border-color: $colorDarkBlue;
   }
 }
 

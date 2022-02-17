@@ -10,7 +10,7 @@ const swiper = new Swiper(".journey-slider", {
   fadeEffect: {
     crossFade: true,
   },
-  slidesPerView: 1,
+  slidesPerView: 5,
 
   pagination: {
     el: ".journey-pagination",
@@ -41,6 +41,8 @@ const circleSlider = new Swiper(".circle-slider", {
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
       bigCircle.classList.add("big-circle-" + index_currentSlide);
       bigCircle.classList.remove("big-circle-" + removeIndex);
+      // circleSlide.classList.add("swiper-slide-" + index_currentSlide);
+      circleSlide.classList.remove("swiper-slide-" + removeIndex);
     },
   },
 });

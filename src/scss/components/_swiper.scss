@@ -99,43 +99,10 @@
   }
 }
 .slide-info {
-  @include fluidValue(width, 415, 296, 1680, 768);
+  @include fluidValue(width, 415, 375, 1680, 1200);
+  @include fluidValue(width, 375, 296, 1200, 768);
+
   padding-top: 55px;
-}
-
-.slide-icon {
-  margin-bottom: 37px;
-  circle {
-    fill: $colorPink;
-  }
-
-  path {
-    fill: $colorWhite;
-  }
-
-  .slide-2 & {
-    circle {
-      fill: $colorYellow;
-    }
-  }
-
-  .slide-3 & {
-    circle {
-      fill: $colorRed;
-    }
-  }
-
-  .slide-4 & {
-    circle {
-      fill: $colorGreen;
-    }
-  }
-
-  .slide-5 & {
-    circle {
-      fill: $colorTurquoise;
-    }
-  }
 }
 
 h3 {
@@ -180,7 +147,6 @@ a {
 
 .slide-icon {
   margin-bottom: 37px;
-
   @media (min-width: 1199px) {
     width: 90px;
     height: 90px;
@@ -251,7 +217,7 @@ a {
       border-bottom: 10px solid $colorGreen;
     }
 
-    &.borderBlue {
+    &.borderTurquoise {
       border-bottom: 10px solid $colorTurquoise;
     }
   }
