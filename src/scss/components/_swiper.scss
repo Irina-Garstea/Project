@@ -35,6 +35,8 @@
   font-style: italic;
   background-color: transparent;
   border: 0;
+  @include fluidValue(padding-top, 15, 25, 1680, 768);
+  @include fluidValue(font-size, 18, 16, 1680, 768);
   cursor: pointer;
 
   &:focus {
