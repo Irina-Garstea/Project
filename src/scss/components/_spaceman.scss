@@ -1,30 +1,34 @@
-.ids-section {
-  .ids-block {
-    background-color: $colorRed;
-    position: absolute;
-    width: 740px;
-    height: 496px;
-    color: $colorWhite;
-    margin-left: 180px;
-    margin-top: 280px;
-    margin-bottom: 40px;
-    padding: 100px;
-  }
-  .tra {
-    display: grid;
-    grid-template-columns: repeat(2, 0fr);
-    .ids-content {
-      background-color: $colorGray;
-      width: 655px;
-      height: 576px;
-      margin-top: 230px;
-    }
-    .img-spaceman {
-      img {
-        width: 895px;
-        height: 759px;
-        margin-top: 120px;
-      }
-    }
-  }
+.ids-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.square {
+  background-color: $colorGreen;
+  max-width: 655px;
+  height: 550px;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  margin-top: 198px;
+}
+.image-spaceman {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  margin-top: 90px;
+  max-width: 895px;
+  height: 759px;
+  margin-right: 170px;
+}
+.ids-description {
+  background-color: $colorRed;
+  color: $colorWhite;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  max-width: 740px;
+  height: 495px;
+  margin-left: 180px;
+  margin-top: 238px;
+  padding: 80px;
 }

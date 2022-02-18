@@ -230,7 +230,6 @@
     border-radius: 50%;
     border: 1px solid $colorPink;
     background-color: $colorWhite;
-    animation: switch-animation 2s infinite linear;
 
     &:not(.swiper-slide-active) {
       visibility: hidden;
@@ -251,51 +250,13 @@
 }
 
 @keyframes switch-animation {
-  0% {
-    border-color: $colorPink;
-  }
-  8% {
-    border-color: $colorRed;
-  }
-
-  16% {
-    border-color: $colorTurquoise;
-  }
-
-  24% {
-    border-color: $colorGreen;
-  }
-
-  32% {
-    color: $colorBlack;
-  }
-
-  42% {
-    color: $colorOrange;
-  }
-
+  0%,
   50% {
-    border-color: $colorBlue;
+    border-color: white;
   }
-
-  60% {
-    color: $colorYellow;
-  }
-
-  70% {
-    border-color: $colorTurquoise;
-  }
-
-  80% {
-    border-color: $colorBeeYellow;
-  }
-
-  90% {
-    border-color: $colorEvaGreen;
-  }
-
+  50.1%,
   100% {
-    border-color: $colorDarkBlue;
+    border-color: blue;
   }
 }
 
