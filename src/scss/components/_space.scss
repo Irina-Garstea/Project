@@ -21,7 +21,6 @@
 
   .container {
     display: grid;
-    gap: 190px;
 
     @media (min-width: 768px) {
       justify-content: space-between;
@@ -33,15 +32,9 @@
   .space-content {
     padding: 171px 0;
     align-self: center;
-    justify-content: center;
 
     @media (max-width: 1199px) {
       max-width: 100%;
-    }
-
-    @media (max-width: 767px) {
-      max-width: 100%;
-      padding: 60px 0;
     }
 
     h2 {
@@ -49,24 +42,21 @@
       font-style: normal;
       font-weight: normal;
       margin-bottom: 20px;
+      margin-left: 12px;
+      margin-right: 12px;
     }
 
     p {
-      @include fluidValue(max-width, 440, 336, 1680, 1200);
-      @include fluidValue(max-width, 336, 320, 1200, 768);
-      @include fluidValue(
-        font-family,
-        $font-family-base,
-        $font-mercury,
-        1680,
-        678
-      );
-      @include fluidValue(padding-bottom, 20, 40, 1680, 768);
-      @include fluidValue(font-size, 18, 16, 1680, 768);
-      @include fluidValue(line-height, 27, 24, 1680, 768);
+      font-family: $font-family-base;
       font-weight: normal;
+      padding-bottom: 20px;
+      max-width: 460px;
+
       @media (max-width: 1199px) {
+        font-family: $font-mercury;
         font-style: italic;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
 
@@ -83,6 +73,15 @@
     img {
       padding-left: 22px;
     }
+  }
+
+  .swiper-slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background-color: $colorWhite;
   }
 }
 
@@ -121,8 +120,6 @@
   align-items: center;
   @include fluidValue(width, 480, 280, 1680, 768);
   @include fluidValue(height, 480, 280, 1680, 768);
-  @include fluidValue(width, 480, 296, 767, 320);
-  @include fluidValue(height, 480, 296, 767, 320);
 }
 
 .big-circle {
@@ -154,13 +151,6 @@
       width: 12px;
       height: 12px;
       border-width: 3px;
-    }
-
-    @media (max-width: 767px) {
-      width: 12px;
-      height: 12px;
-      border-width: 3px;
-      left: 36%;
     }
   }
 
@@ -214,22 +204,63 @@
   width: 100% !important;
   height: 100% !important;
   @include fluidValue(padding, 100, 60, 1199, 768);
-  @include fluidValue(padding, 100, 60, 767, 320);
+
+  overflow: hidden;
 
   .swiper-wrapper {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    transform: translate3d(0, 0, 0) !important;
+
+    &-1 {
+      color: $colorRed;
+    }
+
+    &-2 {
+      color: $colorTurquoise;
+    }
+
+    &-3 {
+      color: $colorGreen;
+    }
+
+    &-4 {
+      color: $colorBlack;
+    }
+
+    &-5 {
+      color: $colorOrange;
+    }
+
+    &-6 {
+      color: $colorBlue;
+    }
+
+    &-7 {
+      color: $colorYellow;
+    }
+
+    &-8 {
+      color: $colorTurquoise;
+    }
+
+    &-9 {
+      color: $colorBeeYellow;
+    }
+
+    &-10 {
+      color: $colorEvaGreen;
+    }
+
+    &-11 {
+      color: $colorDarkBlue;
+    }
   }
 
   .swiper-slide {
-    transform: translate3d(0, 0, 0) !important;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid $colorPink;
-    background-color: $colorWhite;
+    transition-duration: 0ms !important;
 
     &:not(.swiper-slide-active) {
       visibility: hidden;
@@ -244,19 +275,7 @@
       visibility: visible;
       opacity: 1 !important;
       pointer-events: auto;
-      transition: opacity 0s linear !important;
     }
-  }
-}
-
-@keyframes switch-animation {
-  0%,
-  50% {
-    border-color: white;
-  }
-  50.1%,
-  100% {
-    border-color: blue;
   }
 }
 

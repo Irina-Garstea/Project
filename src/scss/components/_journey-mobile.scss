@@ -1,6 +1,8 @@
 .non-mobile {
   @media (max-width: 767px) {
     display: none;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 .mobile {
