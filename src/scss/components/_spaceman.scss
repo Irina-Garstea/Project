@@ -12,6 +12,10 @@
   grid-column: 1 / 3;
   grid-row: 1;
   margin-top: 198px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 .image-spaceman {
   grid-column: 2 / 4;
@@ -20,10 +24,15 @@
   max-width: 895px;
   height: 759px;
   margin-right: 170px;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 }
 .ids-description {
   background-color: $colorRed;
   color: $colorWhite;
+  font-family: $font-family-base;
   grid-column: 1 / 3;
   grid-row: 1;
   max-width: 740px;
@@ -31,4 +40,21 @@
   margin-left: 180px;
   margin-top: 238px;
   padding: 80px;
+
+  @media (max-width: 1199px) {
+    max-width: 456px;
+    height: 412px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+p {
+  font-size: 20px;
+  line-height: 27px;
 }
