@@ -3,12 +3,10 @@
   color: $colorWhite;
   font-family: $font-ideal-sans;
 }
-
-.container {
+.ids {
   display: flex;
-  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
   gap: 125px;
-  padding-bottom: 123px;
   padding-top: 120px;
 }
 .footer-description {
@@ -16,27 +14,28 @@
     font-size: 28px;
     line-height: 42px;
   }
-
   a {
     color: $colorWhite;
   }
-  p {
-    padding-bottom: 80px;
-  }
+}
+.description-services,
+.descriptionIDB {
+  margin-top: 40px;
 }
 .contacts {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   font-weight: $font-weight-semibold;
+  padding-top: 80px;
 }
 .contact-us {
-  padding-top: 80px;
+  margin-top: 80px;
   img {
     margin-left: 22px;
   }
 }
 
 .descriptionIDB {
-  margin-top: 75px;
+  margin-bottom: 75px;
 }

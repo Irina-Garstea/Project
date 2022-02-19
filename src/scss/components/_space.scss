@@ -191,7 +191,7 @@
   }
 
   &-10 {
-    color: $colorEvaGreen;
+    color: $colorMint;
   }
 
   &-11 {
@@ -213,6 +213,7 @@
     padding: 0;
     list-style-type: none;
     transform: translate3d(0, 0, 0) !important;
+    // color: $colorPink;
 
     &-1 {
       color: $colorRed;
@@ -251,7 +252,7 @@
     }
 
     &-10 {
-      color: $colorEvaGreen;
+      color: $colorMint;
     }
 
     &-11 {
