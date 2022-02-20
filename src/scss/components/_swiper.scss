@@ -105,8 +105,6 @@
 
 .slide-info {
   @include fluidValue(width, 375, 296, 1200, 768);
-  @include fluidValue(width, 415, 375, 1680, 1200);
-
   padding-top: 55px;
 
   h3 {
@@ -153,11 +151,6 @@
 .slide-icon {
   margin-bottom: 37px;
 
-  @media (min-width: 1199px) {
-    width: 90px;
-    height: 90px;
-  }
-
   circle {
     fill: $colorPink;
   }
@@ -188,6 +181,10 @@
     circle {
       fill: $colorTurquoise;
     }
+  }
+  @media (min-width: 1199px) {
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -255,11 +252,12 @@
 
 .circles {
   display: grid;
-  // @include fluidValue(width, 55, 28, 1680, 768);
+  @include fluidValue(width, 55, 28, 1680, 768);
+  @include fluidValue(height, 22, 9, 1680, 768);
 }
 
 .circle {
-  // position: relative;
+  position: relative;
   width: 8px;
   height: 8px;
   align-self: center;
@@ -275,16 +273,17 @@
   &::before,
   &::after {
     content: "";
-    // position: absolute;
+    position: absolute;
     border-radius: 50%;
-    // @include fluidValue(width, 8, 4, 1680, 768);
-    // @include fluidValue(height, 8, 4, 1680, 768);
+    @include fluidValue(width, 8, 4, 1680, 768);
+    @include fluidValue(height, 8, 4, 1680, 768);
   }
 
   &::before {
     content: "";
     background-color: $colorRed;
-    // @include fluidValue(right, 16, 8, 1680, 768);
+
+    @include fluidValue(right, 16, 8, 1680, 768);
     @media (max-width: 767px) {
       width: 4px;
       height: 4px;
@@ -294,7 +293,8 @@
   &::after {
     content: "";
     background-color: $colorGreen;
-    // @include fluidValue("left", 16, 8, 1680, 768);
+
+    @include fluidValue("left", 16, 8, 1680, 768);
     @media (max-width: 767px) {
       width: 4px;
       height: 4px;

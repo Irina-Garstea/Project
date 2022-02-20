@@ -2,35 +2,81 @@
   background-color: $colorDarkBlue;
   color: $colorWhite;
   font-family: $font-ideal-sans;
+
+  @media (max-width: 767px) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
+
 .ids {
   display: flex;
   flex-direction: row;
   gap: 125px;
   padding-top: 120px;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
 }
+
 .footer-description {
+  @media (max-width: 1199px) {
+    // padding-top: 70px;
+  }
+
+  @media (max-width: 767px) {
+    // padding-top: 50px;
+  }
+
   span {
     font-size: 28px;
     line-height: 42px;
+
+    @media (max-width: 767px) {
+      line-height: 36px;
+    }
   }
+
   a {
     color: $colorWhite;
   }
 }
+
 .description-services,
 .descriptionIDB {
   margin-top: 40px;
 }
+
+.description-services {
+  @media (max-width: 199px) {
+    padding: 54px 0;
+  }
+}
+
 .contacts {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   font-weight: $font-weight-semibold;
-  padding-top: 80px;
 }
+
 .contact-us {
-  margin-top: 80px;
+  padding-top: 80px;
+
+  @media (max-width: 1199px) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   img {
     margin-left: 22px;
   }
@@ -38,4 +84,12 @@
 
 .descriptionIDB {
   margin-bottom: 75px;
+
+  @media (max-width: 1199px) {
+    padding-top: 65px;
+
+    p {
+      display: none;
+    }
+  }
 }
