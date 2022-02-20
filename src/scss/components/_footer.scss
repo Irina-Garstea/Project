@@ -4,8 +4,7 @@
   font-family: $font-ideal-sans;
 
   @media (max-width: 767px) {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0 12px;
   }
 }
 
@@ -25,14 +24,6 @@
 }
 
 .footer-description {
-  @media (max-width: 1199px) {
-    // padding-top: 70px;
-  }
-
-  @media (max-width: 767px) {
-    // padding-top: 50px;
-  }
-
   span {
     font-size: 28px;
     line-height: 42px;
@@ -48,13 +39,20 @@
 }
 
 .description-services,
-.descriptionIDB {
+.description-IDB {
+  letter-spacing: 1px;
   margin-top: 40px;
 }
 
 .description-services {
   @media (max-width: 199px) {
     padding: 54px 0;
+  }
+}
+
+.description-IDB {
+  @media (max-width: 767px) {
+    margin-top: 35px;
   }
 }
 
@@ -83,7 +81,8 @@
 }
 
 .descriptionIDB {
-  margin-bottom: 75px;
+  margin-top: 75px;
+  margin-bottom: 123px;
 
   @media (max-width: 1199px) {
     padding-top: 65px;

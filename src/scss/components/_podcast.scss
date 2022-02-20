@@ -1,51 +1,47 @@
-.section-podcast {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
-    padding-bottom: 80px;
+.podcast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+  margin-top: 80px;
 
-    @media (max-width: 1199px) {
-      // display: flex;
-
-      // gap: 79px;
-      // margin-left: 93px;
-      // margin-top: 79px;
-    }
-    @media (max-width: 767px) {
-      display: contents;
-      max-width: 100%;
-    }
+  @media (max-width: 1199px) {
+    margin-left: 90px;
+    max-width: max-content;
   }
-  .podcast-description {
-    font-size: 22px;
-    line-height: 33px;
-    margin-left: 105px;
 
-    @media (max-width: 767px) {
-      margin-left: 12px;
-    }
+  @media (max-width: 767px) {
+    display: block;
+    margin-left: 12px;
+    max-width: 296px;
+    margin-top: 50px;
+  }
+}
 
-    p {
-      @media (max-width: 1199px) {
-        font-size: 18px;
-        line-height: 27px;
-        font-style: italic;
+.podcast-description {
+  font-size: 22px;
+  line-height: 33px;
 
-        @media (max-width: 767px) {
-          @include lineClamp(3);
-        }
-      }
+  p {
+    @media (max-width: 1199px) {
+      font-size: 18px;
+      line-height: 27px;
+      font-style: italic;
     }
   }
 }
+
 .button-podcast {
   padding-left: 281px;
   margin-right: 113px;
-  @media (max-width: 767px) {
-    padding-left: 12px;
-    margin: 40px 0 50px;
+
+  @media (max-width: 1199px) {
+    margin-left: 79px;
   }
+
+  @media (max-width: 767px) {
+    margin: 40px 0 50px 0;
+  }
+
   button {
     background-color: $colorPink;
     color: $colorWhite;
@@ -53,13 +49,12 @@
     border: 1px solid $colorPink;
     font-size: 16px;
     line-height: 24px;
+    padding: 12px 24px;
   }
 
   @media (max-width: 1199px) {
     font-size: 14px;
     line-height: 21px;
-  }
-  @media (max-width: 767px) {
-    // max-width: 100%;
+    padding: 14px 24px 50px 0;
   }
 }
