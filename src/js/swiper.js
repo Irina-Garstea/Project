@@ -1,8 +1,14 @@
 import Swiper, { Autoplay, Navigation, Pagination, EffectFade } from "swiper";
 
-const renderYears = ['1966 - 2004', '2005 – 2009', '2010 - 2014', '2015 - 2021', '2021 - 2030'];
+const renderYears = [
+  "1966 - 2004",
+  "2005 – 2009",
+  "2010 - 2014",
+  "2015 - 2021",
+  "2021 - 2030",
+];
 
-const knowledgeSlider = new Swiper('.knowledge-slider', {
+const knowledgeSlider = new Swiper(".knowledge-slider", {
   modules: [Pagination, Navigation, EffectFade],
   autoplay: {
     delay: 6700,
@@ -10,12 +16,13 @@ const knowledgeSlider = new Swiper('.knowledge-slider', {
     pauseOnMouseEnter: true,
   },
   height: 300,
-  effect: 'fade',
+  effect: "fade",
   fadeEffect: { crossFade: true },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
-    renderBullet: (index, className) => `<span class="${className}">${renderYears[index]}</span>`,
+    renderBullet: (index, className) =>
+      `<span class="${className}">${renderYears[index]}</span>`,
   },
 });
 
@@ -34,7 +41,7 @@ const circleSlider = new Swiper(".circle-slider", {
     slideChange: function () {
       const index_currentSlide = circleSlider.realIndex;
       const bigCircle = document.querySelector(".big-circle");
-      const slide = document.querySelector(".swiper-wrapper");
+      const slide = document.querySelector(".slides");
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
       bigCircle.classList.add("big-circle-" + index_currentSlide);
       bigCircle.classList.remove("big-circle-" + removeIndex);

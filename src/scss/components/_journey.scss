@@ -1,5 +1,6 @@
 .knowledge-section {
-  background: $colorBlue url('/img/svg/knowledge-bg.svg') center / 100% 70% no-repeat;
+  background: $colorBlue url("/img/svg/knowledge-bg.svg") center / 100% 70%
+    no-repeat;
 }
 
 .knowledge-content {
@@ -84,12 +85,16 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 100%;
       height: 1px;
-      background-image: linear-gradient(to right, rgba(132, 191, 65, 0.09), $colorPink);
+      background-image: linear-gradient(
+        to right,
+        rgba(132, 191, 65, 0.09),
+        $colorPink
+      );
       border-image-slice: 1;
     }
   }
@@ -118,7 +123,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -5px;
       width: 11px;
@@ -288,6 +293,24 @@
   justify-content: center;
   align-items: center;
 
+  img {
+    &.borderTurquoise {
+      border-bottom: 7px solid $colorTurquoise;
+    }
+    &.borderYellow {
+      border-bottom: 7px solid $colorYellow;
+    }
+    &.borderRed {
+      border-bottom: 7px solid $colorRed;
+    }
+    &.borderGreen {
+      border-bottom: 7px solid $colorGreen;
+    }
+    &.borderGreenLighter {
+      border-bottom: 7px solid $colorGreenLighter;
+    }
+  }
+
   > img {
     position: absolute;
     left: 50%;
@@ -351,7 +374,7 @@
 
     &::before,
     &::after {
-      content: '';
+      content: "";
     }
 
     span {
@@ -431,7 +454,7 @@
   margin-bottom: 40px;
 
   &::before {
-    content: '';
+    content: "";
     width: 11px;
     height: 11px;
     border-radius: 50%;
@@ -439,13 +462,17 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(132, 191, 65, 0.09), $colorPink);
+    background-image: linear-gradient(
+      to right,
+      rgba(132, 191, 65, 0.09),
+      $colorPink
+    );
     border-image-slice: 1;
   }
 }
