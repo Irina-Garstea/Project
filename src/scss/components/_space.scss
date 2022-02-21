@@ -228,8 +228,8 @@
     padding: 0;
     list-style-type: none;
     transform: translate3d(0, 0, 0) !important;
-
     color: $colorPink;
+
     &-1 {
       color: $colorRed;
     }
@@ -280,7 +280,7 @@
 
     &:not(.swiper-slide-active) {
       visibility: hidden;
-      opacity: 1 !important;
+      opacity: 0 !important;
       pointer-events: none;
       transition: opacity 0.5s linear !important;
       height: 0;
