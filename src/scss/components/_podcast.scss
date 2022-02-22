@@ -6,7 +6,7 @@
 
   @media (max-width: 1199px) {
     margin-left: 90px;
-    max-width: max-content;
+    grid-template-columns: 1fr max-content;
   }
 
   @media (max-width: 767px) {
@@ -24,7 +24,6 @@
   p {
     @media (max-width: 1199px) {
       font-size: 18px;
-      line-height: 27px;
       font-style: italic;
     }
   }

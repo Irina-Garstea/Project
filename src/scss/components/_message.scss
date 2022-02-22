@@ -18,16 +18,16 @@
       content: "";
       top: 0;
       left: 0;
-      height: calc(100% - 264px);
-      // height: 635px;
+
       background-color: $colorTurquoise;
 
-      @media (max-width: 1199px) {
-        height: 458px;
-      }
+      @include fluidValue(height, 1016, 391, 767, 320);
 
-      @media (max-width: 767px) {
-        height: 1037px;
+      @media (min-width: 768px) {
+        height: calc(100% - 412px);
+      }
+      @media (min-width: 1199px) {
+        height: calc(100% - 264px);
       }
     }
 
