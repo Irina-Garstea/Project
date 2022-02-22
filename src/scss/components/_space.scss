@@ -292,3 +292,18 @@
     transform: rotateZ(360deg);
   }
 }
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-counter {
+  color: black;
+  display: flex;
+  justify-self: center;
+}

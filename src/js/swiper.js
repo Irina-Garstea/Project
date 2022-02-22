@@ -49,4 +49,13 @@ const circleSlider = new Swiper(".circle-slider", {
       slide.classList.remove("slide-" + removeIndex);
     },
   },
+  pagination: {
+    el: ".pagination",
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `
+      <span class="space-number">Space <span class="${currentClass}">${currentClass}</span>  </span>
+      <div class="pagination-counter"><span class="${currentClass}">${currentClass}</span>/<span class="${totalClass}"> ${totalClass}</span></div>`;
+    },
+  },
 });

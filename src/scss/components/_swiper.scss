@@ -1,303 +1,303 @@
-/* Journey Pagination */
-.journey-pagination {
-  position: relative;
-  display: flex;
-  @include fluidValue(gap, 194, 77, 1680, 768);
-  @include fluidValue(width, 1320, 750, 1680, 768);
-  margin: 0 auto 60px;
-  z-index: 1;
+// /* Journey Pagination */
+// .journey-pagination {
+//   position: relative;
+//   display: flex;
+//   @include fluidValue(gap, 194, 77, 1680, 768);
+//   @include fluidValue(width, 1320, 750, 1680, 768);
+//   margin: 0 auto 60px;
+//   z-index: 1;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(132, 191, 65, 0.09),
-      rgba(252, 252, 252, 1)
-    );
-    border-image-slice: 1;
-  }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 1px;
+//     background-image: linear-gradient(
+//       to right,
+//       rgba(132, 191, 65, 0.09),
+//       rgba(252, 252, 252, 1)
+//     );
+//     border-image-slice: 1;
+//   }
 
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
+//   @media (max-width: 767px) {
+//     display: none;
+//   }
+// }
 
-.journey-bullet {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  padding-top: 15px;
-  color: $colorWhite;
-  font-weight: $font-weight-normal;
-  font-style: italic;
-  background-color: transparent;
-  border: 0;
-  @include fluidValue(padding-top, 15, 25, 1680, 768);
-  @include fluidValue(font-size, 18, 16, 1680, 768);
-  cursor: pointer;
+// .journey-bullet {
+//   position: relative;
+//   display: grid;
+//   justify-items: center;
+//   padding-top: 15px;
+//   color: $colorWhite;
+//   font-weight: $font-weight-normal;
+//   font-style: italic;
+//   background-color: transparent;
+//   border: 0;
+//   @include fluidValue(padding-top, 15, 25, 1680, 768);
+//   @include fluidValue(font-size, 18, 16, 1680, 768);
+//   cursor: pointer;
 
-  &:focus {
-    outline: none;
-  }
+//   &:focus {
+//     outline: none;
+//   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: currentColor;
-    transition: background-color 0.5s ease-in;
-    z-index: 1;
-  }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: -5px;
+//     width: 11px;
+//     height: 11px;
+//     border-radius: 50%;
+//     background-color: currentColor;
+//     transition: background-color 0.5s ease-in;
+//     z-index: 1;
+//   }
 
-  &.is-active {
-    &::before {
-      background-color: $colorPink;
-      animation: pulsePaginationBulletAnimation 2s infinite;
-    }
-  }
+//   &.is-active {
+//     &::before {
+//       background-color: $colorPink;
+//       animation: pulsePaginationBulletAnimation 2s infinite;
+//     }
+//   }
 
-  @keyframes pulsePaginationBulletAnimation {
-    0% {
-      box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
-    }
+//   @keyframes pulsePaginationBulletAnimation {
+//     0% {
+//       box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
+//     }
 
-    70% {
-      box-shadow: 0 0 0 10px rgba($colorPink, 0);
-    }
+//     70% {
+//       box-shadow: 0 0 0 10px rgba($colorPink, 0);
+//     }
 
-    100% {
-      box-shadow: 0 0 0 0 rgba($colorPink, 0);
-    }
-  }
-}
+//     100% {
+//       box-shadow: 0 0 0 0 rgba($colorPink, 0);
+//     }
+//   }
+// }
 
-.journey-container {
-  position: relative;
-  display: flex;
-  height: 550px;
-  width: max-content;
-}
+// .journey-container {
+//   position: relative;
+//   display: flex;
+//   height: 550px;
+//   width: max-content;
+// }
 
-.journey-slider {
-  overflow: hidden;
+// .journey-slider {
+//   overflow: hidden;
 
-  .swiper-slide {
-    display: grid;
-    top: 0;
-    grid-template-columns: max-content 1fr;
-    @include fluidValue(gap, 10, 30, 1199, 768);
-    @include fluidValue(gap, 90, 85, 1680, 1200);
+//   .swiper-slide {
+//     display: grid;
+//     top: 0;
+//     grid-template-columns: max-content 1fr;
+//     @include fluidValue(gap, 10, 30, 1199, 768);
+//     @include fluidValue(gap, 90, 85, 1680, 1200);
 
-    opacity: 0 !important;
+//     opacity: 0 !important;
 
-    &.swiper-slide-active {
-      opacity: 1 !important;
-      align-self: center;
-    }
-  }
-}
+//     &.swiper-slide-active {
+//       opacity: 1 !important;
+//       align-self: center;
+//     }
+//   }
+// }
 
-.slide-info {
-  @include fluidValue(width, 375, 296, 1200, 768);
-  padding-top: 55px;
+// .slide-info {
+//   @include fluidValue(width, 375, 296, 1200, 768);
+//   padding-top: 55px;
 
-  h3 {
-    font-style: italic;
-    font-family: $font-mercury;
-    font-weight: 400;
-    margin-bottom: 17px;
-  }
+//   h3 {
+//     font-style: italic;
+//     font-family: $font-mercury;
+//     font-weight: 400;
+//     margin-bottom: 17px;
+//   }
 
-  h4 {
-    font-style: italic;
-    font-family: $font-ideal-sans;
-    font-weight: 400;
-    margin-bottom: 17px;
-  }
+//   h4 {
+//     font-style: italic;
+//     font-family: $font-ideal-sans;
+//     font-weight: 400;
+//     margin-bottom: 17px;
+//   }
 
-  span {
-    display: inline-block;
-    font-family: $font-ideal-sans;
-    font-weight: $font-weight-medium;
-  }
+//   span {
+//     display: inline-block;
+//     font-family: $font-ideal-sans;
+//     font-weight: $font-weight-medium;
+//   }
 
-  p {
-    font-family: $font-family-base;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 35px;
-    margin-top: 0;
-  }
+//   p {
+//     font-family: $font-family-base;
+//     font-size: 18px;
+//     line-height: 27px;
+//     margin-bottom: 35px;
+//     margin-top: 0;
+//   }
 
-  a {
-    color: $colorWhite;
-    text-transform: uppercase;
-    font-family: $font-ideal-sans;
-    font-weight: $font-weight-semibold;
-    letter-spacing: 1px;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    gap: 20px;
-  }
-}
+//   a {
+//     color: $colorWhite;
+//     text-transform: uppercase;
+//     font-family: $font-ideal-sans;
+//     font-weight: $font-weight-semibold;
+//     letter-spacing: 1px;
+//     font-size: 16px;
+//     line-height: 24px;
+//     display: flex;
+//     gap: 20px;
+//   }
+// }
 
-.slide-icon {
-  margin-bottom: 37px;
+// .slide-icon {
+//   margin-bottom: 37px;
 
-  circle {
-    fill: $colorPink;
-  }
+//   circle {
+//     fill: $colorPink;
+//   }
 
-  path {
-    fill: $colorWhite;
-  }
+//   path {
+//     fill: $colorWhite;
+//   }
 
-  .slide2 & {
-    circle {
-      fill: $colorYellow;
-    }
-  }
+//   .slide2 & {
+//     circle {
+//       fill: $colorYellow;
+//     }
+//   }
 
-  .slide3 & {
-    circle {
-      fill: $colorRed;
-    }
-  }
+//   .slide3 & {
+//     circle {
+//       fill: $colorRed;
+//     }
+//   }
 
-  .slide4 & {
-    circle {
-      fill: $colorGreen;
-    }
-  }
+//   .slide4 & {
+//     circle {
+//       fill: $colorGreen;
+//     }
+//   }
 
-  .slide5 & {
-    circle {
-      fill: $colorTurquoise;
-    }
-  }
-  @media (min-width: 1199px) {
-    width: 90px;
-    height: 90px;
-  }
-}
+//   .slide5 & {
+//     circle {
+//       fill: $colorTurquoise;
+//     }
+//   }
+//   @media (min-width: 1199px) {
+//     width: 90px;
+//     height: 90px;
+//   }
+// }
 
-.slide-image {
-  position: relative;
-  @include fluidValue(width, 370, 335, 1200, 768);
-  @include fluidValue(width, 692, 540, 1680, 1200);
+// .slide-image {
+//   position: relative;
+//   @include fluidValue(width, 370, 335, 1200, 768);
+//   @include fluidValue(width, 692, 540, 1680, 1200);
 
-  .sky {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    @include fluidValue(width, 240, 262, 1200, 768);
-    @include fluidValue(height, 290, 307, 1200, 768);
-    @include fluidValue(width, 540, 500, 1680, 1200);
-    @include fluidValue(height, 525, 490, 1680, 1200);
+//   .sky {
+//     position: absolute;
+//     margin-left: auto;
+//     margin-right: auto;
+//     left: 0;
+//     right: 0;
+//     @include fluidValue(width, 240, 262, 1200, 768);
+//     @include fluidValue(height, 290, 307, 1200, 768);
+//     @include fluidValue(width, 540, 500, 1680, 1200);
+//     @include fluidValue(height, 525, 490, 1680, 1200);
 
-    &.borderPink {
-      border-bottom: 7px solid $colorPink;
-    }
-  }
+//     &.borderPink {
+//       border-bottom: 7px solid $colorPink;
+//     }
+//   }
 
-  .sky {
-    &.borderYellow {
-      border-bottom: 10px solid $colorYellow;
-    }
+//   .sky {
+//     &.borderYellow {
+//       border-bottom: 10px solid $colorYellow;
+//     }
 
-    &.borderRed {
-      border-bottom: 10px solid $colorRed;
-    }
+//     &.borderRed {
+//       border-bottom: 10px solid $colorRed;
+//     }
 
-    &.borderGreen {
-      border-bottom: 10px solid $colorGreen;
-    }
+//     &.borderGreen {
+//       border-bottom: 10px solid $colorGreen;
+//     }
 
-    &.borderTurquoise {
-      border-bottom: 10px solid $colorTurquoise;
-    }
-  }
-}
+//     &.borderTurquoise {
+//       border-bottom: 10px solid $colorTurquoise;
+//     }
+//   }
+// }
 
-.frame {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 40px;
-  z-index: 1;
-  background-color: $colorGray;
-  border-bottom: 8px solid $colorGray;
-  border-radius: 6px;
-  @include fluidValue(width, 290, 335, 1199, 768);
-  @include fluidValue(width, 450, 335, 1200, 768);
-  @include fluidValue(width, 692, 540, 1680, 1200);
+// .frame {
+//   position: absolute;
+//   margin-left: auto;
+//   margin-right: auto;
+//   left: 0;
+//   right: 0;
+//   top: 40px;
+//   z-index: 1;
+//   background-color: $colorGray;
+//   border-bottom: 8px solid $colorGray;
+//   border-radius: 6px;
+//   @include fluidValue(width, 290, 335, 1199, 768);
+//   @include fluidValue(width, 450, 335, 1200, 768);
+//   @include fluidValue(width, 692, 540, 1680, 1200);
 
-  img {
-    background-color: $colorWhite;
-    height: 100%;
-    width: 100%;
-  }
-}
+//   img {
+//     background-color: $colorWhite;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
 
-.circles {
-  display: grid;
-  @include fluidValue(width, 55, 28, 1680, 768);
-  @include fluidValue(height, 22, 9, 1680, 768);
-}
+// .circles {
+//   display: grid;
+//   @include fluidValue(width, 55, 28, 1680, 768);
+//   @include fluidValue(height, 22, 9, 1680, 768);
+// }
 
-.circle {
-  position: relative;
-  width: 8px;
-  height: 8px;
-  align-self: center;
-  justify-self: center;
-  background-color: $colorYellow;
-  border-radius: 50%;
+// .circle {
+//   position: relative;
+//   width: 8px;
+//   height: 8px;
+//   align-self: center;
+//   justify-self: center;
+//   background-color: $colorYellow;
+//   border-radius: 50%;
 
-  @media (max-width: 767px) {
-    width: 4px;
-    height: 4px;
-  }
+//   @media (max-width: 767px) {
+//     width: 4px;
+//     height: 4px;
+//   }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    @include fluidValue(width, 8, 4, 1680, 768);
-    @include fluidValue(height, 8, 4, 1680, 768);
-  }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     border-radius: 50%;
+//     @include fluidValue(width, 8, 4, 1680, 768);
+//     @include fluidValue(height, 8, 4, 1680, 768);
+//   }
 
-  &::before {
-    content: "";
-    background-color: $colorRed;
+//   &::before {
+//     content: "";
+//     background-color: $colorRed;
 
-    @include fluidValue(right, 16, 8, 1680, 768);
-    @media (max-width: 767px) {
-      width: 4px;
-      height: 4px;
-    }
-  }
+//     @include fluidValue(right, 16, 8, 1680, 768);
+//     @media (max-width: 767px) {
+//       width: 4px;
+//       height: 4px;
+//     }
+//   }
 
-  &::after {
-    content: "";
-    background-color: $colorGreen;
+//   &::after {
+//     content: "";
+//     background-color: $colorGreen;
 
-    @include fluidValue("left", 16, 8, 1680, 768);
-    @media (max-width: 767px) {
-      width: 4px;
-      height: 4px;
-    }
-  }
-}
+//     @include fluidValue("left", 16, 8, 1680, 768);
+//     @media (max-width: 767px) {
+//       width: 4px;
+//       height: 4px;
+//     }
+//   }
+// }
