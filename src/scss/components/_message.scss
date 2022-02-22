@@ -24,7 +24,6 @@
       @include fluidValue(height, 1036, 400, 767, 320);
 
       @media (min-width: 768px) {
-        // height: calc(100% - 412px);
         @include fluidValue(height, 457, 1021, 767, 320);
       }
       @media (min-width: 1199px) {
