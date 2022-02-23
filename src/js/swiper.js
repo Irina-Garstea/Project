@@ -26,8 +26,12 @@ const knowledgeSlider = new Swiper(".knowledge-slider", {
   },
 });
 
+function paginationCreate() {
+  return '<div class="swiper-pagination"></div>';
+}
+
 const circleSlider = new Swiper(".circle-slider", {
-  modules: [Autoplay, EffectFade],
+  modules: [Autoplay, EffectFade, Pagination],
   autoplay: {
     delay: 1500,
     waitForTransition: false,
