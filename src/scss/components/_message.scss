@@ -10,7 +10,6 @@
     &::before,
     &::after {
       position: absolute;
-      width: calc(50% - 200px);
       z-index: -1;
     }
 
@@ -18,14 +17,14 @@
       content: "";
       top: 0;
       left: 0;
-
+      width: calc(45% - 100px);
       background-color: $colorTurquoise;
-
-      @include fluidValue(height, 1036, 400, 767, 320);
+      @include fluidValue(height, 1060, 420, 767, 320);
 
       @media (min-width: 768px) {
         @include fluidValue(height, 457, 1021, 767, 320);
       }
+
       @media (min-width: 1199px) {
         height: calc(100% - 264px);
       }
@@ -36,6 +35,7 @@
         content: "";
         bottom: 0;
         right: 0;
+        width: calc(50% - 200px);
         background-color: $colorRed;
         height: 532px;
       }
