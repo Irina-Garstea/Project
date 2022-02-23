@@ -297,15 +297,19 @@
     &.borderTurquoise {
       border-bottom: 7px solid $colorTurquoise;
     }
+
     &.borderYellow {
       border-bottom: 7px solid $colorYellow;
     }
+
     &.borderRed {
       border-bottom: 7px solid $colorRed;
     }
+
     &.borderGreen {
       border-bottom: 7px solid $colorGreen;
     }
+
     &.borderGreenLighter {
       border-bottom: 7px solid $colorGreenLighter;
     }
@@ -481,9 +485,11 @@
   0% {
     box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba($colorPink, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba($colorPink, 0);
   }

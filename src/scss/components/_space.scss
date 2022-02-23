@@ -85,7 +85,7 @@
   .swiper-slide {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     border: 1px solid currentColor;
     border-radius: 50%;
     background-color: $colorWhite;
@@ -298,12 +298,12 @@
   padding: 0;
   display: grid;
   gap: 10px;
-  color: black;
+  color: $colorBlack;
   align-items: center;
   justify-content: center;
 }
 .pagination-counter {
-  color: black;
+  color: $colorBlack;
   display: flex;
   justify-self: center;
 }

@@ -19,7 +19,7 @@
       left: 0;
       width: calc(45% - 100px);
       background-color: $colorTurquoise;
-      @include fluidValue(height, 1060, 420, 767, 320);
+      @include fluidValue(height, 1036, 400, 767, 320);
 
       @media (min-width: 768px) {
         @include fluidValue(height, 457, 1021, 767, 320);
