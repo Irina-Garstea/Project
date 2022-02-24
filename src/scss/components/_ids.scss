@@ -1,7 +1,6 @@
 .section-ids {
   position: relative;
   margin-bottom: 80px;
-
   @media (max-width: 1199px) {
     margin-bottom: 40px;
   }
@@ -15,13 +14,12 @@
     width: 50%;
     margin: auto;
     background-color: $colorGray;
-    @include fluidValue(max-height, 580, 452, 1336, 768);
-    @include fluidValue(max-height, 1080, 870, 768, 300);
+    @include fluidValue(height, 576, 492, 1680, 767);
     z-index: -1;
 
-    @media (max-width: 768px) {
-      top: -20px;
-      bottom: -20px;
+    @media (max-width: 767px) {
+      top: -30px;
+      height: 100%;
     }
   }
 
@@ -29,16 +27,17 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: contents;
     }
   }
 }
 
 .ids-content {
-  @include fluidValue(width, 740, 456, 1336, 768);
+  @include fluidValue(width, 740, 456, 1680, 1199);
   @include fluidValue(margin-left, -105, 0, 1336, 768);
   @include fluidValue(padding, 100, 50, 1336, 768);
+  // margin: 40px 0;
   background-color: $colorRed;
   color: $colorWhite;
   z-index: 1;
@@ -73,6 +72,7 @@
 
   @media (max-width: 1199px) {
     margin-left: -200px;
+    width: 100%;
   }
   @media (max-width: 767px) {
     display: block;
