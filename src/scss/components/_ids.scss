@@ -16,7 +16,7 @@
     left: 0;
     width: 50%;
     margin: auto;
-    background-color: $colorBlue;
+    background-color: $colorGray;
     @include fluidValue(height, 576, 492, 1680, 1199);
     z-index: -1;
 
