@@ -1,0 +1,31 @@
+.section-information {
+  margin-top: 118px;
+  margin-bottom: 100px;
+
+  .blockquote {
+    position: relative;
+    border: 1px solid $colorPink;
+
+    &::before {
+      content: open-quote;
+      position: absolute;
+      font-weight: bold;
+      font-size: 100px;
+      color: $colorPink;
+      left: 204px;
+    }
+
+    h4 {
+      font-weight: $font-weight-normal;
+      font-style: italic;
+      font-weight: $font-weight-light;
+      padding: 82px 95px 10px;
+    }
+    p {
+      font-weight: $font-weight-medium;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 0 190px 60px;
+    }
+  }
+}

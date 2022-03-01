@@ -1,0 +1,21 @@
+.section-adipisicing {
+  background-color: $colorGray;
+  height: 551px;
+  margin-bottom: 100px;
+  max-width: 100%;
+  padding: 100px 445px;
+  .container {
+    max-width: 790px;
+
+    h2 {
+      font-family: $font-ideal-sans;
+      font-weight: $font-weight-normal;
+      max-width: 790px;
+      margin-bottom: 20px;
+    }
+    em {
+      @include fluidValue(font-size, 22, 18, 1680.1199);
+      @include fluidValue(line-height, 33, 27, 1680.1199);
+    }
+  }
+}
