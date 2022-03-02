@@ -1,0 +1,37 @@
+.section-dolor {
+  background-color: $colorGray-98;
+  .container {
+    max-width: 790px;
+    h2 {
+      font-family: $font-ideal-sans;
+      padding-top: 100px;
+    }
+    h5 {
+      color: $colorLightGray;
+      font-family: $font-ideal-sans;
+      font-style: italic;
+      font-weight: $font-weight-normal;
+      margin-left: -198px;
+      padding-top: 50px;
+    }
+    p {
+      font-family: $font-ideal-sans;
+      font-weight: $font-weight-light;
+      font-style: italic;
+      max-width: 790px;
+      @include fluidValue(font-size, 18, 18, 1680.1199);
+      @include fluidValue(line-height, 33, 27, 1680.1199);
+      padding-bottom: 60px;
+    }
+    em {
+      @include fluidValue(font-size, 22, 18, 1680.1199);
+      @include fluidValue(line-height, 33, 27, 1680.1199);
+      max-width: 790px;
+      padding-top: 80px;
+    }
+
+    img {
+      margin-left: -206px;
+    }
+  }
+}

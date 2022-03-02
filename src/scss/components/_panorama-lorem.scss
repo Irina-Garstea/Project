@@ -16,7 +16,7 @@
       font-weight: $font-weight-normal;
       @include fluidValue(font-size, 22, 18, 1680.1199);
       @include fluidValue(line-height, 33, 27, 1680.1199);
-      margin: 0 auto;
+      margin-left: 207px;
       padding-top: 60px;
       max-width: 790px;
     }
