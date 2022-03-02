@@ -1,0 +1,45 @@
+.section-hashtags {
+  background: url("/img/svg/decor.svg") center / 100% 70% no-repeat;
+  background-size: cover;
+  background-position-y: 25%;
+  margin-bottom: 100px;
+
+  .container {
+    position: relative;
+    background-color: $colorWillowBrook;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 100px;
+    width: 980px;
+    height: 574px;
+
+    &::after {
+      position: sticky;
+      content: "";
+      background: url("/img/svg/decor.svg") center / 100% 70% no-repeat;
+    }
+
+    span {
+      font-family: $font-ideal-sans;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+.fa-envelope-o,
+.fa-facebook-official,
+.fa-download {
+  color: $colorBlack;
+}
+
+.hashtags {
+  font-family: $font-ideal-sans;
+  font-weight: $font-weight-light;
+}
+
+.fa-twitter {
+  color: $colorPink;
+}
+.socialMedia {
+  display: flex;
+  gap: 40px;
+}

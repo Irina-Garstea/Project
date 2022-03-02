@@ -1,0 +1,18 @@
+.section-iusto {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  .container {
+    max-width: 790px;
+    h2 {
+      font-family: $font-ideal-sans;
+      font-weight: $font-weight-normal;
+      padding-bottom: 20px;
+    }
+    em {
+      font-family: $font-ideal-sans;
+      font-weight: $font-weight-normal;
+      @include fluidValue(font-size, 22, 18, 1680.1199);
+      @include fluidValue(line-height, 33, 27, 1680.1199);
+    }
+  }
+}

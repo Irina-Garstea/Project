@@ -1,0 +1,15 @@
+.section-cupiditate {
+  background-color: $colorGray;
+  height: 412px;
+  margin-bottom: 200px;
+  .container {
+    max-width: 790px;
+    h2 {
+      padding: 100px 0 20px;
+    }
+    em {
+      @include fluidValue(font-size, 22, 18, 1680.1199);
+      @include fluidValue(line-height, 33, 27, 1680.1199);
+    }
+  }
+}
