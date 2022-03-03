@@ -3,6 +3,10 @@
   margin-bottom: 100px;
   .container {
     max-width: 790px;
+    @media (max-width: 1199px) {
+      max-width: 695px;
+      height: 400px;
+    }
 
     h2 {
       font-weight: $font-weight-normal;

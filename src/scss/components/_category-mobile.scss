@@ -1,0 +1,24 @@
+.category-mobile {
+  max-width: 100%;
+  padding-left: 0;
+  p {
+    text-transform: uppercase;
+    color: $colorPink;
+    font-family: $font-family-base;
+  }
+  h3 {
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-normal;
+    max-width: 296px;
+    padding-bottom: 30px;
+  }
+}
+.names {
+  font-family: $font-ideal-sans;
+  font-weight: $font-weight-medium;
+}
+.lists {
+  font-family: $font-ideal-sans;
+  font-style: italic;
+  padding-bottom: 20px;
+}

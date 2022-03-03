@@ -2,6 +2,9 @@
   background-color: $colorDarkBlue;
   color: $colorWhite;
   font-family: $font-ideal-sans;
+  .container {
+    padding-bottom: 120px;
+  }
 }
 
 .ids {

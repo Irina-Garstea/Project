@@ -1,14 +1,33 @@
 .section-panorama {
-  max-width: 100%;
+  background: url("/img/panorama-large.jpg") center / 100% no-repeat;
+  height: 677px;
   margin: 100px 0 20px 0;
-  padding: 0;
 
-  h5 {
+  @media (max-width: 1199px) {
+    background: url("/img/panorama-medium.jpg") center / 100% no-repeat;
+    height: 439px;
+  }
+
+  @media (max-width: 767px) {
+    background: url("/img/panorama-small.jpg") center / 100% no-repeat;
+  }
+}
+
+.description-panorama {
+  margin-bottom: 118px;
+  @media (max-width: 767px) {
+  }
+
+  em {
     font-family: $font-ideal-sans;
-    margin-left: 180px;
-    font-style: italic;
     font-weight: $font-weight-normal;
     color: $colorLightGray;
-    padding-top: 50px;
+    @include fluidValue(font-size, 18, 14, 1680, 768);
+    @include fluidValue(line-height, 27, 21, 1680, 768);
+    margin-left: 180px;
+
+    @media (max-width: 767px) {
+      max-width: 296px;
+    }
   }
 }

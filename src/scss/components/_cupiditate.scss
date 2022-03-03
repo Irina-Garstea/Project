@@ -1,9 +1,12 @@
 .section-cupiditate {
   background-color: $colorGray;
   height: 412px;
-  margin-bottom: 200px;
+  @include fluidValue(margin-bottom, 200, 70, 1680.1199);
   .container {
     max-width: 790px;
+    @media (max-width: 1199px) {
+      max-width: 690px;
+    }
     h2 {
       padding: 100px 0 20px;
     }

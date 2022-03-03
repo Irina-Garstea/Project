@@ -2,6 +2,9 @@
   background-color: $colorGray-98;
   .container {
     max-width: 790px;
+    @media (max-width: 1199px) {
+      max-width: 690px;
+    }
     h2 {
       font-family: $font-ideal-sans;
       padding-top: 100px;
@@ -12,7 +15,11 @@
       font-style: italic;
       font-weight: $font-weight-normal;
       margin-left: -198px;
-      padding-top: 50px;
+      padding-top: 20px;
+
+      @media (max-width: 1199px) {
+        margin-left: 0;
+      }
     }
     p {
       font-family: $font-ideal-sans;
@@ -32,6 +39,27 @@
 
     img {
       margin-left: -206px;
+      @media (max-width: 1199px) {
+        margin-left: 0;
+        max-width: 696px;
+      }
+    }
+  }
+  .backtoTop {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $colorWhite;
+    border: 1px color $colorGray-98;
+    float: right;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: $font-weight-bold;
+    margin-top: 40%;
+    p {
+      margin-top: 0;
+      font-size: 10px;
+      font-weight: $font-weight-bold;
     }
   }
 }
