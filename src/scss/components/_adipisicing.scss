@@ -5,6 +5,10 @@
   .container {
     padding: 100px 0;
     max-width: 790px;
+    max-height: 597px;
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
     h2 {
       font-family: $font-ideal-sans;
       font-weight: $font-weight-normal;
@@ -16,15 +20,10 @@
       @include fluidValue(line-height, 33, 27, 1680, 767);
     }
     @media (max-width: 767px) {
-      height: 597px;
       padding: 12px;
     }
   }
   @media (max-width: 1199px) {
     padding: 50px 36px;
-  }
-  @media (max-width: 767) {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }

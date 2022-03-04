@@ -1,6 +1,6 @@
 .section-information {
-  margin-top: 118px;
-  margin-bottom: 100px;
+  @include fluidValue(margin-top, 118, 70, 1680, 767);
+  @include fluidValue(padding-bottom, 100, 50, 1680, 767);
   .container {
     @media (max-width: 1199px) {
       max-width: 790px;
@@ -13,7 +13,7 @@
   .description-border {
     position: relative;
     border: 1px solid $colorPink;
-    height: 297px;
+    max-height: 297px;
 
     &::before {
       content: open-quote;
@@ -45,7 +45,7 @@
       padding: 81px 60px 10px;
     }
     @media (max-width: 767px) {
-      padding: 60px 22px 10px;
+      padding: 10px 22px;
     }
   }
   p {
