@@ -10,11 +10,15 @@
     font-size: 22px;
     line-height: 33px;
     padding: 100px;
-    width: 980px;
+    max-width: 980px;
     height: 574px;
     span {
       font-family: $font-ideal-sans;
       font-weight: $font-weight-medium;
+    }
+    @media (max-width: 767px) {
+      height: 672px;
+      padding: 36px;
     }
   }
 }

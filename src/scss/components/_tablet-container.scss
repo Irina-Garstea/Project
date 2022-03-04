@@ -1,32 +1,25 @@
-.section-information {
-  margin-top: 118px;
+.section-tablet {
   margin-bottom: 100px;
-  .container {
-    @media (max-width: 1199px) {
-      max-width: 790px;
-    }
-    @media (max-width: 767px) {
-      max-width: 100%;
-    }
-  }
+  margin-top: -100px;
 
-  .description-border {
+  .tablet-border {
     position: relative;
     border: 1px solid $colorPink;
+    margin-top: 70px;
     height: 297px;
 
     &::before {
-      content: open-quote;
+      content: "\201C";
       position: absolute;
       font-weight: bold;
-      font-size: 150px;
+      font-size: 120px;
       color: $colorPink;
       font-style: italic;
       top: -10px;
       left: 150px;
       height: 30px;
       background: #fff;
-      padding: 0 60px;
+      padding: 0 40px;
       @media (max-width: 767px) {
         font-size: 80px;
         left: 68px;
@@ -39,11 +32,7 @@
     font-style: italic;
     font-weight: $font-weight-light;
     text-align: center;
-    padding: 82px 95px 10px;
-
-    @media (max-width: 1199px) {
-      padding: 81px 60px 10px;
-    }
+    padding: 81px 60px 10px;
     @media (max-width: 767px) {
       padding: 60px 22px 10px;
     }
@@ -51,11 +40,15 @@
   p {
     font-weight: $font-weight-medium;
     text-align: center;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 0 190px 60px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 60px;
     @media (max-width: 767px) {
       padding: 0 10px 40px;
     }
+  }
+
+  @media (min-width: 1199px) {
+    display: none;
   }
 }

@@ -2,6 +2,7 @@
   background-color: $colorGray;
   height: 412px;
   @include fluidValue(margin-bottom, 200, 70, 1680.1199);
+
   .container {
     max-width: 790px;
     @media (max-width: 1199px) {
