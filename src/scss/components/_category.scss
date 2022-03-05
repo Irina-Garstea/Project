@@ -1,11 +1,7 @@
 .section-category {
   background-color: $colorGray-98;
   margin-top: 80px;
-  .container {
-    @media (max-width: 1199px) {
-      // max-width: 100%;
-    }
-  }
+
   .button-back {
     @include fluidValue(margin-left, 140, 50, 1680, 768);
 
@@ -21,14 +17,15 @@
   .circle {
     position: relative;
     display: block;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
+
+    @include fluidValue(width, 126, 84, 1680, 1199);
+    @include fluidValue(height, 126, 84, 1680, 1199);
+    @include fluidValue(width, 84, 56, 1199, 767);
+    @include fluidValue(height, 84, 56, 1199, 767);
 
     img {
       transform: translate(20%, 20%);
-      @include fluidValue(width, 126, 84, 1680, 1199);
-      @include fluidValue(height, 126, 84, 1680, 1199);
-      @include fluidValue(width, 84, 56, 1199, 767);
-      @include fluidValue(height, 84, 56, 1199, 767);
     }
   }
 
@@ -46,12 +43,10 @@
 
 .description-category {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   @include fluidValue(gap, 174, 77, 1680, 768);
   @include fluidValue(font-size, 32, 22, 1680, 768);
   @include fluidValue(line-height, 40, 33, 1680, 768);
-  max-width: 790px;
-
   @media (max-width: 768px) {
     display: none;
   }

@@ -1,6 +1,5 @@
 .section-voluptates {
-  max-width: 100%;
-  margin-bottom: 100px;
+  @include fluidValue(margin-bottom, 60, 42, 1680, 767);
   .container {
     max-width: 790px;
     @media (max-width: 1199px) {

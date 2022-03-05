@@ -1,42 +1,28 @@
 .section-panorama-lorem {
-  margin-bottom: 120px;
   .container {
-    @media (max-width: 1199px) {
-      img {
-        max-width: 100%;
-        // @media (max-width: 767px) {
-        //   max-width: 100%;
-        // }
-        padding: 36px;
-      }
+    img {
+      max-width: 100%;
     }
+
     h5 {
       color: $colorLightGray;
       font-family: $font-ideal-sans;
       font-style: italic;
       font-weight: $font-weight-normal;
-      margin-left: 0;
       padding-top: 20px;
-
-      @media (max-width: 1199px) {
-        margin-left: 36px;
-        padding-top: 10px;
-      }
     }
 
     em {
       font-family: $font-ideal-sans;
       font-weight: $font-weight-normal;
-      @include fluidValue(font-size, 22, 18, 1680.1199);
-      @include fluidValue(line-height, 33, 27, 1680.1199);
+      @include fluidValue(font-size, 22, 18, 1680, 1199);
+      @include fluidValue(line-height, 33, 27, 1680, 1199);
       margin-left: 207px;
       padding-top: 60px;
       max-width: 790px;
       @media (max-width: 1199px) {
-        margin-left: 36px;
+        margin-left: 0;
       }
-
-      @include fluidValue(width, 790, 690, 1680, 1199);
     }
   }
 }
