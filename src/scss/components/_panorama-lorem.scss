@@ -1,6 +1,7 @@
 .section-panorama-lorem {
   .container {
     img {
+      margin-top: 60px;
       max-width: 100%;
     }
 
@@ -20,6 +21,7 @@
       margin-left: 207px;
       padding-top: 60px;
       max-width: 790px;
+
       @media (max-width: 1199px) {
         margin-left: 0;
       }

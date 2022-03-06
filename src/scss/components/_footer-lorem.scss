@@ -17,14 +17,18 @@
   @media (max-width: 767px) {
     padding: 50px 12px;
   }
+
   .description-Lorem {
     width: 634px;
+
     @media (max-width: 1199px) {
       width: unset;
     }
   }
+
   .descript-lorem {
     width: 324px;
+
     @media (max-width: 1199px) {
       width: unset;
     }
@@ -64,6 +68,7 @@
 .link-ducimus {
   @include fluidValue(margin-top, 98, 40, 1680, 1199);
 }
+
 .title-lorem {
   @media (max-width: 1199px) {
     padding-top: 36px;

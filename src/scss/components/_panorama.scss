@@ -1,7 +1,7 @@
 .section-panorama {
   background: url("/img/panorama-large.jpg") center / 100% no-repeat;
   height: 677px;
-  // margin: 100px 0 30px;
+  margin-bottom: 20px;
 
   @media (max-width: 1199px) {
     background: url("/img/panorama-medium.jpg") center / 100% no-repeat;
@@ -11,18 +11,16 @@
   @media (max-width: 767px) {
     background: url("/img/panorama-small.jpg") center / 100% no-repeat;
     max-width: 100%;
-    margin: 50px 0 10px;
   }
 }
 
 .description-panorama {
   @include fluidValue(margin-bottom, 118, 70, 1680, 1199);
   @include fluidValue(margin-bottom, 70, 50, 1199, 767);
-
-  padding-left: 180px;
+  @include fluidValue(padding-left, 180, 36, 1680, 1199);
 
   @media (max-width: 767px) {
-    padding-left: 12px;
+    padding: 12px;
     max-width: 100%;
   }
 

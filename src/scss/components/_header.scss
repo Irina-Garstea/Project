@@ -208,6 +208,7 @@
 
       &:nth-of-type(2) {
         display: none;
+
         @media (max-width: 1023px) {
           display: inline-block;
         }

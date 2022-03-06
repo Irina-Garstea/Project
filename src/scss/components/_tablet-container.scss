@@ -20,6 +20,7 @@
       height: 30px;
       background: #fff;
       padding: 0 40px;
+
       @media (max-width: 767px) {
         font-size: 80px;
         left: 68px;
@@ -33,16 +34,19 @@
     font-weight: $font-weight-light;
     text-align: center;
     padding: 81px 60px 10px;
+
     @media (max-width: 767px) {
-      padding: 50px 10px 10px;
+      padding: 20px 10px 10px;
     }
   }
+
   p {
     font-weight: $font-weight-medium;
     text-align: center;
     font-size: 16px;
     line-height: 24px;
     padding: 0 60px;
+
     @media (max-width: 767px) {
       padding: 0 10px 40px;
     }

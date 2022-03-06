@@ -19,7 +19,7 @@
       left: 0;
       width: calc(45% - 100px);
       background-color: $colorTurquoise;
-      @include fluidValue(height, 1036, 402, 767, 320);
+      @include fluidValue(height, 1038, 402, 767, 320);
 
       @media (min-width: 768px) {
         @include fluidValue(height, 457, 1021, 767, 320);
@@ -67,6 +67,7 @@
 
 .message-contact-info {
   padding: 40px 25px;
+
   @media (min-width: 1199px) {
     padding: 40px 65px 59px 65px;
   }
