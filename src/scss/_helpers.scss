@@ -53,3 +53,9 @@ body {
     padding: 0 $container-gap;
   }
 }
+
+.highlight-title {
+  font-family: $font-mercury;
+  font-style: italic;
+  color: $colorTurquoise;
+}
